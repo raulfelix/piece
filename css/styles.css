@@ -1,0 +1,51 @@
+html, body, div, img, ol, ul, li { margin: 0; padding: 0; border: 0; }
+
+html { font-size: 100%; }
+
+body { line-height: 1.618em; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+.p-grid { max-width: 71.25em; margin: 0 auto; }
+
+.p-grid-row { padding: 0 0.5em; margin-bottom: 1.25em; }
+.p-grid-row > div { float: left; }
+.p-grid-row:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
+
+.p-column { margin: 0 0.5em; position: relative; }
+
+.p-indent { padding: 1em; }
+
+.p-1-12 { width: 8.333333333333332%; }
+
+.p-1-6 { width: 16.666666666666664%; }
+
+.p-1-4 { width: 25%; }
+
+.p-1-3 { width: 33.33333333333333%; }
+
+.p-5-12 { width: 41.66666666666667%; }
+
+.p-1-2 { width: 50%; }
+
+.p-7-12 { width: 58.333333333333336%; }
+
+.p-2-3 { width: 66.66666666666666%; }
+
+.p-3-4 { width: 75%; }
+
+.p-5-6 { width: 83.33333333333334%; }
+
+.p-11-12 { width: 91.66666666666666%; }
+
+.p-1 { width: 100%; }
+
+body { background-color: #f0f0f0; color: #000; }
+
+.header { height: 5em; background-color: #fff; }

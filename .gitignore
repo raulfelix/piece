@@ -1,0 +1,7 @@
+.ruby-gemset
+.ruby-version
+.jshintrc
+.DS_Store
+
+.sass-cache/
+node_modules/

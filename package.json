@@ -1,0 +1,16 @@
+{
+  "name": "piece_furniture",
+  "description": "Best furniture site ever",
+  "version": "1.0.0",
+  "homepage": "http://www.piecefurniture.com.au",
+  "author": {
+    "name": "Pupo",
+    "url": "http://pupo.com/"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

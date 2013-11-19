@@ -1,0 +1,65 @@
+// 
+// Variables
+//
+$base_font_size: 16px;
+
+//
+// placeholders
+//
+
+//
+// Mixins
+//
+@mixin transition($properties...) {
+  -webkit-transition: $properties;
+     -moz-transition: $properties;
+       -o-transition: $properties;
+          transition: $properties;
+}
+
+@mixin transform($properties...) {
+  -webkit-transform: $properties;
+     -moz-transform: $properties;
+       -o-transform: $properties;
+          transform: $properties;
+}
+
+@mixin box-shadow($properties...) {
+  -webkit-box-shadow: $properties;
+     -moz-box-shadow: $properties;
+       -o-box-shadow: $properties;
+          box-shadow: $properties;
+}
+
+@mixin box-sizing($property) {
+  -webkit-box-sizing: $property;
+     -moz-box-sizing: $property;
+       -o-box-sizing: $property;
+          box-sizing: $property;
+}
+
+@mixin font-smoothing($state: on) {
+  @if $state == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+//
+// Functions
+//
+
+// convert a pixel value to ems using base font size
+// or another base font size if supplied
+@function em($values...) {
+  @if length($values) == 1 {
+    @return #{ (1px / $base_font_size) * nth($values, 1) }em;
+  } 
+  @else {
+    @return #{ (1px / nth($values, 2)) * nth($values, 1) }em; 
+  }
+}
