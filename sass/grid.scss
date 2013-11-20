@@ -18,9 +18,11 @@
 
 .p-grid-row {
   padding: 0 em(8);
-  margin-bottom: em(20);
   & > div {
     float: left;
+    padding: 0 em(8);
+    position: relative;
+    @include box-sizing(border-box);
   }
 
   &:after {
@@ -30,11 +32,6 @@
     display: block;
     visibility: hidden;
   }
-}
-
-.p-column {
-  margin: 0 em(8);
-  position: relative;
 }
 
 .p-indent {

@@ -4,8 +4,21 @@
 $base_font_size: 16px;
 
 //
+// colours
+//
+$highlight: #ff0000;
+$medium-1: #d6d6d6;
+
+//
 // placeholders
 //
+%clearfix:after {
+  content: '';
+  height: 0;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
 
 //
 // Mixins

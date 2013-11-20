@@ -1,3 +1,5 @@
+.timeline li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
+
 html, body, div, img, ol, ul, li { margin: 0; padding: 0; border: 0; }
 
 html { font-size: 100%; }
@@ -12,13 +14,16 @@ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: n
 
 table { border-collapse: collapse; border-spacing: 0; }
 
+a { text-decoration: none; color: #000; line-height: 1.3; }
+a:hover { color: red; }
+
+.timeline li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
+
 .p-grid { max-width: 71.25em; margin: 0 auto; }
 
-.p-grid-row { padding: 0 0.5em; margin-bottom: 1.25em; }
-.p-grid-row > div { float: left; }
+.p-grid-row { padding: 0 0.5em; }
+.p-grid-row > div { float: left; padding: 0 0.5em; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
 .p-grid-row:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
-
-.p-column { margin: 0 0.5em; position: relative; }
 
 .p-indent { padding: 1em; }
 
@@ -46,6 +51,66 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .p-1 { width: 100%; }
 
+body { font-family: "chaparral-pro"; font-size: 16px; font-weight: 400; font-style: normal; }
+
+blockquote { font-size: 26px; line-height: 28px; font-style: normal; font-weight: 400; text-align: left; text-indent: 0px; font-family: "chaparral-pro"; color: black; margin: 0px 0px 48px 2em; border-width: 0px 0px 0px 5px; border-style: solid; padding: 0px 0px 0px 16px; }
+
+h1 { font-size: 3em; line-height: 1em; font-style: italic; font-weight: 300; font-family: "chaparral-pro"; color: black; margin: 0px 0px 20px 0px; }
+
+h2 { text-transform: none; font-size: 2.25em; line-height: 0.667em; letter-spacing: 1px; font-weight: 300; font-style: italic; font-family: "chaparral-pro"; color: black; margin: 0px 0px 0.667em 0px; }
+
+p { text-indent: 0px; font-size: 1.375em; font-style: normal; font-weight: 400; font-family: "chaparral-pro"; color: black; line-height: 1.455em; margin: 0px 0px 0.5em 0px; border-width: 0px; border-style: solid; padding: 0.5em 0px; border-color: lightgrey; }
+
+p.intro { text-indent: 0px; line-height: 1.25em; font-size: 2em; font-style: normal; font-weight: 400; letter-spacing: 0px; font-family: "chaparral-pro"; color: black; margin: 0px 0px 48px 0px; }
+
+h3 { font-size: 32px; font-family: "chaparral-pro"; font-weight: 300; font-style: italic; line-height: 40px; margin: 0px 0px 24px 0px; background-color: rgba(0, 0, 0, 0); }
+
+h1.title { font-family: "Din Display Pro Light Italic"; font-weight: 200; font-style: italic; font-size: 3.75em; text-transform: uppercase; margin: 0px 0px 96px 0px; line-height: 1em; }
+
+p a { color: red; text-decoration: none; }
+
+p a:hover { text-decoration: underline; }
+
+p.list { margin: 0px 0px 48px 2em; font-size: 1.375em; line-height: 1.455em; border-style: none; }
+
+p.list2 { border-width: 1px 0px; font-size: 1.75em; line-height: 1.455em; }
+
+.timeline li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
+
 body { background-color: #f0f0f0; color: #000; }
 
 .header { height: 5em; background-color: #fff; }
+.header .logo { height: 5em; width: 9.375em; float: left; background-color: #000; }
+.header span { font-size: 0.875em; margin-top: 1.92857em; display: block; float: left; }
+
+.footer { background-color: #f4f4f4; border-top: 1px solid #d6d6d6; padding: 8.4375em 0; position: relative; }
+.footer .legal { color: #aaa9a9; font-size: 0.875em; float: left; }
+.footer .nav { margin-top: 0; }
+.footer .up { font-size: 1.125em; background-color: #d6d6d6; color: #fff; border-radius: 3px; position: absolute; top: -8.55556em; padding: 0.27778em 1.11111em; left: 50%; margin-left: -3.44444em; }
+
+.hero { position: relative; }
+.hero img { width: 100%; display: block; }
+.hero .intro { position: absolute; top: 30%; left: 50%; width: 60%; margin-left: -30%; text-align: center; }
+.hero .jos { background-color: #fff; padding: 1.25em 7.5em; color: red; border-radius: 3px; }
+.hero h1 { font-size: 40px; font-family: "Din Display Pro Light Italic"; font-weight: 200; font-style: italic; font-size: 3.75em; color: #fff; margin-bottom: 2.5em; }
+
+.nav { float: right; margin-top: 1.9375em; }
+.nav li { float: left; padding: 0 1em; }
+.nav li:last-child { padding-right: 0; }
+.nav a { display: block; font-size: 0.875em; text-transform: capitalize; }
+.nav a:hover { border-bottom: 1px solid red; }
+.nav .active { border-bottom: 1px solid red; color: red; }
+
+.content { padding: 6.25em 0; }
+
+.content .indented { padding: 0 9%; }
+
+.timeline li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
+
+.timeline { border-top: 1px solid #d6d6d6; padding: 1.25em 0 2.5em 0; }
+.timeline li { margin-bottom: 1em; width: 100%; }
+.timeline li div:first-child { float: left; width: 15%; }
+.timeline li div:last-child { float: left; width: 85%; }
+
+.hero .about { text-align: left; top: 60%; left: 20%; margin-left: 0; width: 20%; }
+.hero .about h1 { color: #000; margin-bottom: 0; }

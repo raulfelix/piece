@@ -8,4 +8,110 @@ body {
 .header {
   height: em(80);
   background-color: #fff;
+
+  .logo {
+    height: em(80);
+    width: em(150);
+    float: left;
+    background-color: #000;
+  }
+  span {
+    font-size: em(14);
+    margin-top: em(27, 14px);
+    display: block;
+    float: left;
+  }
+}
+
+.footer {
+  background-color: #f4f4f4;
+  border-top: 1px solid #d6d6d6;
+  padding: em(135) 0;
+  position: relative;
+  .legal {
+    color: #aaa9a9;
+    font-size: em(14);
+    float: left;
+  } 
+  .nav {
+    margin-top: 0;
+  }
+
+  .up {
+    font-size: em(18);
+    background-color: #d6d6d6;
+    color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: em(-154, 18px);
+    padding: em(5, 18px) em(20, 18px);
+    left: 50%;
+    margin-left: em(-62, 18px);
+  }
+}
+
+.hero {
+  position: relative;
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  .intro {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 60%;
+    margin-left: -30%;
+    text-align: center;
+  }
+  .jos {
+    background-color: #fff;
+    padding: em(20) em(120);
+    color: $highlight;
+    border-radius: 3px;
+  }
+  // background: url('../images/hero.jpg') no-repeat center center;
+  h1 {
+    font-size: 40px;
+    font-family: "Din Display Pro Light Italic";
+    font-weight: 200;
+    font-style: italic;
+    font-size: 3.75em;
+    color: #fff;
+    margin-bottom: em(40);
+  }
+}
+
+.nav { 
+  float: right;
+  margin-top: em(31);
+  li {
+    float: left;
+    padding: 0 em(16);
+  }
+  li:last-child {
+    padding-right: 0;
+  }
+
+  a {
+    display: block;
+    font-size: em(14);
+    text-transform: capitalize;
+    &:hover {
+      border-bottom: 1px solid $highlight;
+    }
+  }
+  .active {
+    border-bottom: 1px solid $highlight;
+    color: $highlight;
+  }
+}
+
+.content {
+  padding: em(100) 0;
+}
+
+.content .indented {
+  padding: 0 9%;
 }

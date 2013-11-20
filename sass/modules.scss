@@ -1,0 +1,31 @@
+@import "util";
+
+.timeline {
+  border-top: 1px solid $medium-1;
+  padding: em(20) 0 em(40) 0;
+  li {
+    margin-bottom: em(16);
+    width: 100%;
+    @extend %clearfix;
+  }
+  li div:first-child {
+    float: left;
+    width: 15%;
+  }
+  li div:last-child {
+    float: left;
+     width: 85%;
+  }
+}
+
+.hero .about {
+  text-align: left;
+  top: 60%;
+  left: 20%;
+  margin-left: 0;
+  width: 20%;
+  h1 {
+    color: #000;
+    margin-bottom: 0;
+  }
+}
