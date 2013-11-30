@@ -1,6 +1,6 @@
 ul.timeline li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
 
-html, body, div, img, ol, ul, li { margin: 0; padding: 0; border: 0; }
+html, body, div, img, ol, ul, li { margin: 0; padding: 0; border: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
 
 html { font-size: 100%; }
 
@@ -22,7 +22,7 @@ ul.timeline li:after { content: ''; height: 0; clear: both; display: block; visi
 .p-grid { max-width: 71.25em; margin: 0 auto; }
 
 .p-grid-row { padding: 0 0.5em; }
-.p-grid-row > div { float: left; padding: 0 0.5em; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
+.p-grid-row > div { float: left; padding: 0 0.5em; }
 .p-grid-row:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
 
 .p-indent { padding: 1em; }
@@ -61,7 +61,7 @@ h2 { font-size: 2.25em; line-height: 0.667em; letter-spacing: 1px; font-weight: 
 
 p { text-indent: 0px; font-size: 1.375em; font-style: normal; font-weight: 400; font-family: "chaparral-pro"; color: black; line-height: 1.455em; margin: 0px 0px 0.5em 0px; border-width: 0px; border-style: solid; padding: 0.5em 0px; border-color: lightgrey; }
 
-p.intro { text-indent: 0px; line-height: 1.25em; font-size: 2em; font-style: normal; font-weight: 400; letter-spacing: 0px; font-family: "chaparral-pro"; color: black; margin: 0px 0px 48px 0px; }
+.intro { text-indent: 0px; line-height: 1.25em; font-size: 2em; font-style: normal; font-weight: 400; letter-spacing: 0px; font-family: "chaparral-pro"; color: black; margin: 0 0 1.5em 0; }
 
 h3 { font-size: 32px; font-family: "chaparral-pro"; font-weight: 300; font-style: italic; line-height: 40px; margin: 0px 0px 20px 0px; }
 
@@ -81,14 +81,17 @@ ul.timeline li:after { content: ''; height: 0; clear: both; display: block; visi
 
 body { background-color: #f0f0f0; color: #000; }
 
+.hamburger { display: none; }
+
 .header { height: 5em; background-color: #fff; }
-.header .logo { height: 5em; width: 9.375em; float: left; background: url("../images/logo.png") no-repeat center center transparent; }
+.header .logo { height: 5em; width: 7.8125em; float: left; background: url("../images/logo.png") no-repeat center center transparent; }
 .header span { font-size: 0.875em; margin-top: 1.92857em; display: block; float: left; }
 
 .footer { background-color: #f4f4f4; border-top: 1px solid #d6d6d6; padding: 8.4375em 0; position: relative; }
 .footer .legal { color: #aaa9a9; font-size: 0.875em; float: left; }
 .footer .nav { margin-top: 0; }
-.footer .up { font-size: 1.125em; background-color: #d6d6d6; color: #fff; border-radius: 3px; position: absolute; top: -8.55556em; padding: 0.27778em 1.11111em; left: 50%; margin-left: -3.44444em; }
+.footer .up { font-size: 1.125em; background-color: #d6d6d6; color: #fff; border-radius: 3px; margin-left: -3.44444em; padding: 0.27778em 1.11111em; position: absolute; top: -8.55556em; left: 50%; }
+.footer .p-1 { position: relative; }
 
 .hero { position: relative; }
 .hero img { width: 100%; display: block; }
@@ -118,7 +121,7 @@ ul.timeline li div:last-child { float: left; width: 82%; }
 .hero .commission h1 { color: #fff; margin: -5.625em 0 0 0; }
 .hero .classes h1 { color: #fff; margin: -2.5em 0 0 0; }
 .hero .classes .jos { float: right; margin-top: -3.75em; padding-left: 3.75em; padding-right: 3.75em; }
-.hero .intro { position: absolute; top: 30%; left: 50%; width: 60%; margin-left: -30%; text-align: center; }
+.hero .introduction { position: absolute; top: 30%; left: 50%; width: 60%; margin-left: -30%; text-align: center; }
 .hero .jos { background-color: #fff; padding: 1.25em 7.5em; color: red; border-radius: 3px; }
 
 .contact h1 { color: #000; margin-bottom: 1.25em; margin-top: 0; }
@@ -127,3 +130,40 @@ ul.timeline li div:last-child { float: left; width: 82%; }
 .contact img { display: block; margin: 3.75em 0 0 0; width: 100%; }
 
 .address p { margin: 0; padding: 0; }
+
+ul.timeline li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
+
+@media all and (max-width: 60.625em) { .hamburger { background: url("../images/hamburger.png") no-repeat scroll center center red; background-size: 50%; border: 1px solid red; display: block; float: right; height: 2.875em; width: 4em; border-radius: 3px; margin-top: 1.125em; }
+  .active .header .nav { display: block; }
+  .active .hamburger { background-image: url("../images/hamburger_red@2x.png"); background-color: #fff; }
+  .header span { display: none; }
+  .header .nav { display: none; background-color: #fff; float: none; position: absolute; top: 5em; left: 0; margin-top: 0; padding-top: 1.25em; padding-bottom: 1.25em; width: 100%; text-align: center; z-index: 2; opacity: 0.95; }
+  .header .nav li { float: none; padding: 0; }
+  .header .nav a { margin-bottom: 1.25em; }
+  .header .nav a:hover { border-bottom: none; text-decoration: underline; }
+  .header .nav .active { border-bottom: none; }
+  .footer { padding: 2.5em 0; }
+  .footer .legal { float: none; padding-top: 2.5em; text-align: center; }
+  .footer .up { top: -3.22222em; }
+  .footer .nav { float: none; text-align: center; margin-top: 1.9375em; }
+  .footer .nav li { float: none; padding: 0; }
+  .footer .nav a { margin-bottom: 1.25em; }
+  .footer .nav a:hover { border-bottom: none; }
+  .hero .intro { width: 100%; margin-left: -50%; padding: 0 0.625em; }
+  .hero .jos { display: block; width: 100%; padding: 0.75em 0; margin-top: -1.0625em; } }
+ul.timeline li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
+
+@media all and (max-width: 30.0625em) { .intro { font-size: 1.5em; margin: 0 0 0.625em 0; }
+  p { font-size: 1.125em; }
+  .content { padding: 1.25em 0; }
+  .content .indented { padding: 0; }
+  .footer { padding: 2.5em 0; }
+  .footer .legal { float: none; padding-top: 2.5em; text-align: center; }
+  .footer .up { top: -3.22222em; }
+  .footer .nav { float: none; text-align: center; margin-top: 1.9375em; }
+  .footer .nav li { float: none; padding: 0; }
+  .footer .nav a { margin-bottom: 1.25em; }
+  .footer .nav a:hover { border-bottom: none; }
+  .hero h1 { font-size: 1.875em; }
+  .hero .introduction { width: 100%; margin-left: -50%; padding: 0 0.625em; }
+  .hero .jos { display: block; width: 100%; padding: 0.75em 0; margin-top: -1.0625em; } }

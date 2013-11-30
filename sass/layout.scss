@@ -5,13 +5,17 @@ body {
   color: #000;
 }
 
+.hamburger {
+  display: none;
+}
+
 .header {
   height: em(80);
   background-color: #fff;
 
   .logo {
     height: em(80);
-    width: em(150);
+    width: em(125);
     float: left;
     background: url('../images/logo.png') no-repeat center center transparent;
   }
@@ -42,11 +46,15 @@ body {
     background-color: #d6d6d6;
     color: #fff;
     border-radius: 3px;
+    margin-left: em(-62, 18px);
+    padding: em(5, 18px) em(20, 18px);
     position: absolute;
     top: em(-154, 18px);
-    padding: em(5, 18px) em(20, 18px);
     left: 50%;
-    margin-left: em(-62, 18px);
+  }
+
+  .p-1 {
+    position: relative;
   }
 }
 
@@ -57,7 +65,6 @@ body {
     display: block;
   }
 
-  // background: url('../images/hero.jpg') no-repeat center center;
   h1 {
     font-size: 40px;
     font-family: "Din Display Pro Light Italic";

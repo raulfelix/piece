@@ -6,16 +6,18 @@
       Piece Furniture (static)
     </title>
     <link href="css/styles.css" media="screen" rel="stylesheet" type="text/css">
+   
     <script src="http://typecast.com/js/libs/google/webfont.js" type="text/javascript"></script>
   </head>
   <body>
     <div class="header">
       <div class="p-grid p-grid-row">
         <div class="p-1">
+          <a id="nav-toggle" href="javascript:void(0)" class="hamburger"></a>
           <a href= "#" class="logo"></a>
           <span>Hand-crafted fine furniture by John Gallagher</span>
           <ul class="nav">
-            <li><a class="active" href="commission.html">Commision a piece</a></li>
+            <li><a href="commission.html">Commision a piece</a></li>
             <li><a href="index.html">Gallery</a></li>
             <li><a href="about.html">About John Gallagher</a></li>
             <li><a href="classes.html">Classes</a></li>
@@ -26,7 +28,7 @@
     </div>
     <div class="hero">
       <img src="images/hero.jpg">
-      <div class="intro">
+      <div class="introduction">
         <h1>Hand-crafted, modern, thoughtfully designed furniture</h1>
         <a href="#" class="jos">See more of John Gallagher's work</a>
       </div>
@@ -45,7 +47,6 @@
       <div class="p-grid p-grid-row">
         <div class="p-1">
           <a href="#" class="up">Back to top</a>
-          <div class="legal">&copy; Piece Furniture since 2004. All rights reserved.</div>
           <ul class="nav">
             <li><a href="index.html">Commision a piece</a></li>
             <li><a href="index.html">Gallery</a></li>
@@ -53,8 +54,12 @@
             <li><a href="index.html">Classes</a></li>
             <li><a href="index.html">Contact</a></li>
           </ul>
+          <div class="legal">&copy; Piece Furniture since 2004. All rights reserved.</div>
         </div>
       </div>
     </div>
+
+    <script src="scripts/jquery-2.0.3.min.js" type="text/javascript"></script>
+    <script src="scripts/nav.js" type="text/javascript"></script>
   </body>
 </html>

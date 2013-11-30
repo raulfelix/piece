@@ -1,0 +1,108 @@
+@import "util";
+
+@media all and (max-width: em(970)) {
+
+  .hamburger {
+    background: url('../images/hamburger.png') no-repeat scroll center center $highlight;
+    background-size: 50%;
+    border: 1px solid $highlight;
+    display: block;
+    float: right;
+    height: em(46);
+    width: em(64);
+    border-radius: 3px;
+    margin-top: em(18);
+  }
+
+  .active {
+    .header .nav {
+      display: block;
+    }
+    .hamburger {
+      background-image: url('../images/hamburger_red@2x.png');
+      background-color: #fff;
+    }
+  }
+
+  .header {
+    span {
+      display: none;
+    }
+
+    .nav {
+      display: none;
+      background-color: #fff;
+      float: none;
+      position: absolute;
+      top: em(80);
+      left: 0;
+      margin-top: 0;
+      padding-top: em(20);
+      padding-bottom: em(20);
+      width: 100%;
+      text-align: center;
+      z-index: 2;
+      opacity: 0.95;
+
+      li {
+        float: none;
+        padding: 0;
+      }
+
+      a {
+        margin-bottom: em(20);
+        &:hover {
+          border-bottom: none;
+          text-decoration: underline;
+        }
+      }
+      .active {
+        border-bottom: none;
+      }
+    }
+  }
+  
+  .footer {
+    padding: em(40) 0;
+    .legal {
+      float: none;
+      padding-top: em(40);
+      text-align: center;
+    }
+    .up {
+      top: em(-58, 18px);
+    } 
+    .nav { 
+      float: none;
+      text-align: center;
+      margin-top: em(31);
+      li {
+        float: none;
+        padding: 0;
+      }
+
+      a {
+        margin-bottom: em(20);
+        &:hover {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .hero { 
+
+    .intro {
+      width: 100%;
+      margin-left: -50%;
+      padding: 0 em(10);
+    }
+
+    .jos {
+      display: block;
+      width: 100%;
+      padding: em(12) 0;
+      margin-top: em(-17);
+    }
+  }
+}
