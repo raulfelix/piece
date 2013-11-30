@@ -13,7 +13,7 @@ body {
     height: em(80);
     width: em(150);
     float: left;
-    background-color: #000;
+    background: url('../images/logo.png') no-repeat center center transparent;
   }
   span {
     font-size: em(14);
@@ -57,20 +57,6 @@ body {
     display: block;
   }
 
-  .intro {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    width: 60%;
-    margin-left: -30%;
-    text-align: center;
-  }
-  .jos {
-    background-color: #fff;
-    padding: em(20) em(120);
-    color: $highlight;
-    border-radius: 3px;
-  }
   // background: url('../images/hero.jpg') no-repeat center center;
   h1 {
     font-size: 40px;
@@ -110,8 +96,19 @@ body {
 
 .content {
   padding: em(100) 0;
+
+  img {
+    width: 80%;
+    display: block;
+    margin: em(80) auto;
+  }
+
+  a {
+    border-bottom: 1px solid $highlight;
+    text-decoration: none;
+  }
 }
 
-.content .indented {
+.content .indented, .hero .indented {
   padding: 0 9%;
 }

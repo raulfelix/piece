@@ -1,31 +1,91 @@
 @import "util";
 
-.timeline {
+ul.timeline {
   border-top: 1px solid $medium-1;
   padding: em(20) 0 em(40) 0;
+  margin: 0;
   li {
     margin-bottom: em(16);
     width: 100%;
+    list-style: none;
     @extend %clearfix;
   }
   li div:first-child {
     float: left;
-    width: 15%;
+    width: 18%;
   }
   li div:last-child {
     float: left;
-     width: 85%;
+     width: 82%;
   }
 }
 
-.hero .about {
-  text-align: left;
-  top: 60%;
-  left: 20%;
-  margin-left: 0;
-  width: 20%;
+.hero {
+  .about {
+    h1 {
+      color: #000;
+      margin: em(-70) 0 0 0;
+      width: 20%;
+    }
+  }
+  .commission {
+    h1 {
+      color: #fff;
+      margin: em(-90) 0 0 0;
+    }
+  }
+  .classes {
+    h1 {
+      color: #fff;
+      margin: em(-40) 0 0 0;
+    }
+    .jos {
+      float: right;
+      margin-top: em(-60);
+      padding-left: em(60); 
+      padding-right: em(60); 
+    }
+  }
+  .intro {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 60%;
+    margin-left: -30%;
+    text-align: center;
+  }
+  .jos {
+    background-color: #fff;
+    padding: em(20) em(120);
+    color: $highlight;
+    border-radius: 3px;
+  }
+}
+
+.contact {
   h1 {
     color: #000;
-    margin-bottom: 0;
+    margin-bottom: em(20);
+    margin-top: 0;
+  } 
+  .p-1-2 {
+    float: left;
+  }
+
+  a {
+    color: $highlight;
+    border-bottom: none;
+  }
+  img {
+    display: block;
+    margin: em(60) 0 0 0;
+    width: 100%;
+  }
+}
+
+.address { 
+  p {
+    margin: 0;
+    padding: 0;
   }
 }
