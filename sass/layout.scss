@@ -9,7 +9,7 @@ body {
   display: none;
 }
 
-.header {
+header {
   height: em(80);
   background-color: #fff;
 
@@ -17,7 +17,7 @@ body {
     height: em(80);
     width: em(125);
     float: left;
-    background: url('../images/logo.png') no-repeat center center transparent;
+    background: url('./images/logo.png') no-repeat center center transparent;
   }
   span {
     font-size: em(14);
@@ -27,7 +27,7 @@ body {
   }
 }
 
-.footer {
+footer {
   background-color: #f4f4f4;
   border-top: 1px solid #d6d6d6;
   padding: em(135) 0;

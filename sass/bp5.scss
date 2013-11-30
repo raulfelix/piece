@@ -3,7 +3,7 @@
 @media all and (max-width: em(970)) {
 
   .hamburger {
-    background: url('../images/hamburger.png') no-repeat scroll center center $highlight;
+    background: url('./images/hamburger.png') no-repeat scroll center center $highlight;
     background-size: 50%;
     border: 1px solid $highlight;
     display: block;
@@ -15,16 +15,16 @@
   }
 
   .active {
-    .header .nav {
+    header .nav {
       display: block;
     }
     .hamburger {
-      background-image: url('../images/hamburger_red@2x.png');
+      background-image: url('./images/hamburger_red@2x.png');
       background-color: #fff;
     }
   }
 
-  .header {
+  header {
     span {
       display: none;
     }
@@ -62,7 +62,7 @@
     }
   }
   
-  .footer {
+  footer {
     padding: em(40) 0;
     .legal {
       float: none;
