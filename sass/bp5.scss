@@ -15,7 +15,7 @@
   }
 
   .active {
-    header .nav {
+    header nav {
       display: block;
     }
     .hamburger {
@@ -29,12 +29,12 @@
       display: none;
     }
 
-    .nav {
+    nav {
       display: none;
       background-color: #fff;
       float: none;
       position: absolute;
-      top: em(80);
+      top: em(108);
       left: 0;
       margin-top: 0;
       padding-top: em(20);
@@ -43,7 +43,9 @@
       text-align: center;
       z-index: 2;
       opacity: 0.95;
+      ul {
 
+      }
       li {
         float: none;
         padding: 0;
@@ -72,7 +74,7 @@
     .up {
       top: em(-58, 18px);
     } 
-    .nav { 
+    nav { 
       float: none;
       text-align: center;
       margin-top: em(31);

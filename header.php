@@ -1,14 +1,4 @@
-<?php
-/**
- * The Header template for our theme
- *
- * Displays all of the <head> section and everything up till <div id="main">
- *
- * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
- */
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE 7]>
 <html class="ie ie7" <?php language_attributes(); ?>>
 <![endif]-->
@@ -36,17 +26,13 @@
     <div class="p-grid p-grid-row">
       <div class="p-1">
         <a id="nav-toggle" href="javascript:void(0)" class="hamburger"></a>
-        <a href= "#" class="logo"></a>
+        <a href= "<?php echo get_home_url(); ?>" class="logo"></a>
         <span>Hand-crafted fine furniture by John Gallagher</span>
-        <ul class="nav">
-          <li><a href="commission.html">Commision a piece</a></li>
-          <li><a href="index.html">Gallery</a></li>
-          <li><a href="about.html">About John Gallagher</a></li>
-          <li><a href="classes.html">Classes</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <nav>
+	        <ul>
+	  				<?php wp_nav_menu( array( 'container'=> false, 'items_wrap' => '%3$s' ) ); ?>
+	        </ul>
+	      </nav>
       </div>
     </div>
   </header>
-
-  <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>

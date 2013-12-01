@@ -37,7 +37,7 @@ footer {
     font-size: em(14);
     float: left;
   } 
-  .nav {
+  nav {
     margin-top: 0;
   }
 
@@ -76,9 +76,10 @@ footer {
   }
 }
 
-.nav { 
+nav { 
   float: right;
   margin-top: em(31);
+  
   li {
     float: left;
     padding: 0 em(16);
@@ -95,7 +96,7 @@ footer {
       border-bottom: 1px solid $highlight;
     }
   }
-  .active {
+  .current-menu-item a {
     border-bottom: 1px solid $highlight;
     color: $highlight;
   }

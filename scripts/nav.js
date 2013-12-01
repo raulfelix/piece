@@ -8,8 +8,8 @@ var Piece = (function() {
   }
 
   function init() {
-    body = $('body');
-    navToggle = $('#nav-toggle').click(toggleNav);
+    body = jQuery('body');
+    navToggle = jQuery('#nav-toggle').click(toggleNav);
     console.log("click");
   }
 
@@ -19,6 +19,6 @@ var Piece = (function() {
 
 })();
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
   Piece.init();
 });
