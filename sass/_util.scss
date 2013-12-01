@@ -12,6 +12,10 @@ $medium-1: #d6d6d6;
 //
 // placeholders
 //
+%relative {
+  position: relative;
+}
+
 %clearfix:after {
   content: '';
   height: 0;

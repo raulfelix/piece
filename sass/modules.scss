@@ -1,49 +1,55 @@
 @import "util";
 
-ul.timeline {
-  border-top: 1px solid $medium-1;
-  padding: em(20) 0 em(40) 0;
-  margin: 0;
-  li {
-    margin-bottom: em(16);
-    width: 100%;
-    list-style: none;
-    @extend %clearfix;
-  }
-  li div:first-child {
-    float: left;
-    width: 18%;
-  }
-  li div:last-child {
-    float: left;
-     width: 82%;
+.about {
+  ul {
+    border-top: 1px solid $medium-1;
+    padding: em(20) 0 em(40) 0;
+    margin: 0;
+    li {
+      margin-bottom: em(16);
+      width: 100%;
+      list-style: none;
+      @extend %clearfix;
+    }
+    li div:first-child {
+      float: left;
+      width: 18%;
+    }
+    li div:last-child {
+      float: left;
+       width: 82%;
+    }
   }
 }
 
 .hero {
-  .about {
-    h1 {
+  &.about {
+    .title {
       color: #000;
-      margin: em(-70) 0 0 0;
       width: 20%;
+      margin: em(-70) 0 0 0;
+      @extend %relative;
     }
   }
-  .commission {
-    h1 {
+  &.commission {
+    .title {
       color: #fff;
       margin: em(-90) 0 0 0;
+      @extend %relative;
     }
   }
-  .classes {
-    h1 {
+  &.classes {
+    .title {
       color: #fff;
       margin: em(-40) 0 0 0;
+      @extend %relative;
     }
     .jos {
       float: right;
       margin-top: em(-60);
       padding-left: em(60); 
       padding-right: em(60); 
+      @extend %relative;
     }
   }
   .introduction {
@@ -86,6 +92,14 @@ ul.timeline {
 .address { 
   p {
     margin: 0;
+    padding: 0;
+  }
+}
+
+.feature {
+  margin: em(100) 0 em(50) 0; 
+  img {
+    margin: em(10) auto;
     padding: 0;
   }
 }

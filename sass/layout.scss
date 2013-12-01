@@ -109,11 +109,12 @@ nav {
   img {
     width: 80%;
     display: block;
-    margin: em(80) auto;
+    margin: em(50) auto;
   }
 
   a {
     border-bottom: 1px solid $highlight;
+    color: $highlight;
     text-decoration: none;
   }
 }
