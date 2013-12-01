@@ -6,12 +6,12 @@
     background: url('./images/hamburger.png') no-repeat scroll center center $highlight;
     background-size: 50%;
     border: 1px solid $highlight;
+    border-radius: 3px;
     display: block;
     float: right;
-    height: em(46);
-    width: em(64);
-    border-radius: 3px;
-    margin-top: em(18);
+    height: em(38);
+    width: em(56);
+    margin-top: em(21);
   }
 
   .active {
