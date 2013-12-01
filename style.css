@@ -34,8 +34,9 @@ img { height: auto; }
 
 .p-grid { max-width: 71.25em; margin: 0 auto; }
 
-.p-grid-row { padding: 0 0.5em; }
-.p-grid-row > div { float: left; padding: 0 0.5em; }
+.p-grid-row { padding: 0 0.625em; }
+.p-grid-row .p-grid-row { padding: 0; }
+.p-grid-row > div { float: left; padding: 0 0.625em; }
 .p-grid-row:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
 
 .p-indent { padding: 1em; }
@@ -68,17 +69,17 @@ body { font-family: "chaparral-pro"; font-size: 16px; font-weight: 400; font-sty
 
 blockquote { font-size: 26px; line-height: 28px; font-style: normal; font-weight: 400; text-align: left; text-indent: 0px; font-family: "chaparral-pro"; color: black; margin: 0px 0px 48px 2em; border-width: 0px 0px 0px 5px; border-style: solid; padding: 0px 0px 0px 16px; }
 
-h1 { font-size: 3em; line-height: 1em; font-style: italic; font-weight: 300; font-family: "chaparral-pro"; color: black; margin: 60px 0px 20px 0px; }
+h1 { font-size: 3em; line-height: 1em; font-style: italic; font-weight: 300; font-family: "chaparral-pro", "Helivetica Neue", Helvetica, Arial; color: black; margin: 60px 0px 20px 0px; }
 
-h2 { font-size: 2.25em; line-height: 0.667em; letter-spacing: 1px; font-weight: 300; font-style: italic; font-family: "chaparral-pro"; color: black; margin: 0px 0px 0.667em 0px; }
+h2 { font-size: 2.25em; line-height: 0.667em; letter-spacing: 1px; font-weight: 300; font-style: italic; font-family: "chaparral-pro", "Helivetica Neue", Helvetica, Arial; color: black; margin: 0px 0px 0.667em 0px; }
 
 p { text-indent: 0px; font-size: 1.375em; font-style: normal; font-weight: 400; font-family: "chaparral-pro"; color: black; line-height: 1.455em; margin: 0px 0px 0.5em 0px; border-width: 0px; border-style: solid; padding: 0.5em 0px; border-color: lightgrey; }
 
 .intro { text-indent: 0px; line-height: 1.25em; font-size: 2em; font-style: normal; font-weight: 400; letter-spacing: 0px; font-family: "chaparral-pro"; color: black; margin: 0 0 1.5em 0; }
 
-h3 { font-size: 32px; font-family: "chaparral-pro"; font-weight: 300; font-style: italic; line-height: 40px; margin: 0px 0px 20px 0px; }
+h3 { font-size: 32px; font-family: "chaparral-pro", "Helivetica Neue", Helvetica, Arial; font-weight: 300; font-style: italic; line-height: 40px; margin: 0px 0px 0.3125em 0px; }
 
-h1.title { font-family: "Din Display Pro Light Italic"; font-weight: 200; font-style: italic; font-size: 3.75em; margin: 0px 0px 96px 0px; line-height: 1em; }
+h1.title { font-family: "Din Display Pro Light Italic", "Helivetica Neue", Helvetica, Arial; font-weight: 200; font-style: italic; font-size: 3.75em; margin: 0px 0px 96px 0px; line-height: 1em; }
 
 p.list { margin: 0px 0px 48px 2em; font-size: 1.375em; line-height: 1.455em; border-style: none; }
 
@@ -139,6 +140,10 @@ nav .current-menu-item a { border-bottom: 1px solid red; color: red; }
 .hero .introduction { position: absolute; top: 30%; left: 50%; width: 60%; margin-left: -30%; text-align: center; }
 .hero .jos { background-color: #fff; padding: 1.25em 7.5em; color: red; border-radius: 3px; }
 
+.gallery img { padding: 0; margin: 0; width: 100%; }
+.gallery h3 { margin-top: 2.5em; }
+.gallery .p-grid-row { margin-bottom: 2.5em; }
+
 .contact h1 { color: #000; margin-bottom: 1.25em; margin-top: 0; }
 .contact .p-1-2 { float: left; }
 .contact a { color: red; border-bottom: none; }
@@ -153,11 +158,11 @@ nav .current-menu-item a { border-bottom: 1px solid red; color: red; }
 
 .about ul li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
 
-@media all and (max-width: 60.625em) { .hamburger { background: url("./images/hamburger.png") no-repeat scroll center center red; background-size: 50%; border: 1px solid red; border-radius: 3px; display: block; float: right; height: 2.375em; width: 3.5em; margin-top: 1.3125em; }
+@media all and (max-width: 62.5em) { .hamburger { background: url("./images/hamburger.png") no-repeat scroll center center red; background-size: 50%; border: 1px solid red; border-radius: 3px; display: block; float: right; height: 2.375em; width: 3.5em; margin-top: 1.3125em; }
   .active header nav { display: block; }
   .active .hamburger { background-image: url("./images/hamburger_red@2x.png"); background-color: #fff; }
   header span { display: none; }
-  header nav { display: none; background-color: #fff; position: absolute; top: 6.75em; left: 0; margin-top: 0; padding-top: 1.25em; padding-bottom: 1.25em; width: 100%; z-index: 2; opacity: 0.95; }
+  header nav { display: none; background-color: #fff; position: absolute; top: 5em; left: 0; margin-top: 0; padding-top: 1.25em; padding-bottom: 1.25em; width: 100%; z-index: 2; opacity: 0.95; }
   header nav li { float: none; padding: 0; }
   header nav a { margin-bottom: 1.25em; }
   header nav a:hover { border-bottom: none; text-decoration: underline; }
@@ -170,5 +175,43 @@ nav .current-menu-item a { border-bottom: 1px solid red; color: red; }
   footer nav li { float: none; padding: 0; }
   footer nav a { margin-bottom: 1.25em; }
   footer nav a:hover { border-bottom: none; }
-  .hero .intro { width: 100%; margin-left: -50%; padding: 0 0.625em; }
-  .hero .jos { display: block; width: 100%; padding: 0.75em 0; margin-top: -1.0625em; } }
+  .hero .introduction { width: 100%; margin-left: -50%; padding: 0 0.625em; } }
+.hero.about .title, .hero.commission .title, .hero.classes .title, .hero.classes .jos { position: relative; }
+
+.about ul li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
+
+@media all and (max-width: 53.125em) { .hero h1 { font-size: 3.125em; }
+  .hero .jos { margin-top: -1.875em; }
+  .content .indented { padding: 0 6%; } }
+.hero.about .title, .hero.commission .title, .hero.classes .title, .hero.classes .jos { position: relative; }
+
+.about ul li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
+
+@media all and (max-width: 45.5em) { .hero h1 { font-size: 2.25em; }
+  .hero .jos { padding-top: 0.75em; padding-bottom: 0.75em; }
+  .content { padding: 2.5em 0; }
+  .content .indented { padding: 0; } }
+.hero.about .title, .hero.commission .title, .hero.classes .title, .hero.classes .jos { position: relative; }
+
+.about ul li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
+
+@media all and (max-width: 30.0625em) { .hero .introduction { top: 30%; }
+  .hero .introduction .title { font-size: 1.75em; }
+  .hero .jos { display: block; padding: 0.75em 1.25em; margin-top: -1.875em; }
+  .content { padding: 2.5em 0; }
+  .content .indented { padding: 0; } }
+.hero.about .title, .hero.commission .title, .hero.classes .title, .hero.classes .jos { position: relative; }
+
+.about ul li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
+
+@media all and (max-width: 23.75em) { .content img { width: 100%; margin: 1em auto; }
+  .content ul { font-size: 1.125em; }
+  p { font-size: 1.125em; }
+  h1 { font-size: 2em; }
+  h3 { font-size: 1.5em; }
+  .bp1-p-1 { width: 100%; }
+  .intro { font-size: 1.5em; margin-bottom: 0.83333em; }
+  .hero .introduction { top: 20%; }
+  .hero .jos { margin-top: -3.75em; }
+  .hero.commission .title { font-size: 1.875em; margin: -2.5em 0; }
+  footer .legal { font-size: 13px; } }
