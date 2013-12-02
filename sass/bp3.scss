@@ -17,4 +17,19 @@
       padding: 0;
     }
   }
+
+  .address {
+    div:first-child {
+      margin-bottom: em(60);
+    }
+    p {
+      margin-bottom: em(10);
+    }
+  }
+  .map-link {
+    display: block;
+  }
+  .bp3-p-1 {
+    width: 100%;
+  }
 }

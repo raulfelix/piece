@@ -5,7 +5,7 @@ Author URI: http://www.raulfelixcarrizo.com
 Description: Fine furniture portfolio site theme
 Version: 1.0
 */
-.hero.about .title, .hero.commission .title, .hero.classes .title, .hero.classes .jos { position: relative; }
+.hero, .hero.about .title, .hero.commission .title, .hero.classes .title, .hero.classes .jos { position: relative; }
 
 .about ul li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
 
@@ -27,10 +27,6 @@ a { text-decoration: none; color: #000; line-height: 1.3; }
 a:hover { color: red; text-decoration: none; }
 
 img { height: auto; }
-
-.hero.about .title, .hero.commission .title, .hero.classes .title, .hero.classes .jos { position: relative; }
-
-.about ul li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
 
 .p-grid { max-width: 71.25em; margin: 0 auto; }
 
@@ -89,10 +85,6 @@ p.list2 { border-width: 1px 0px; font-size: 1.75em; line-height: 1.455em; }
 
 .content li { list-style: initial; }
 
-.hero.about .title, .hero.commission .title, .hero.classes .title, .hero.classes .jos { position: relative; }
-
-.about ul li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
-
 body { background-color: #f0f0f0; color: #000; }
 
 .hamburger { display: none; }
@@ -107,7 +99,6 @@ footer nav { margin-top: 0; }
 footer .up { font-size: 1.125em; background-color: #d6d6d6; color: #fff; border-radius: 3px; margin-left: -3.44444em; padding: 0.27778em 1.11111em; position: absolute; top: -8.55556em; left: 50%; }
 footer .p-1 { position: relative; }
 
-.hero { position: relative; }
 .hero img { width: 100%; display: block; }
 .hero h1 { font-size: 40px; font-family: "Din Display Pro Light Italic"; font-weight: 200; font-style: italic; font-size: 3.75em; color: #fff; margin-bottom: 2.5em; }
 
@@ -123,10 +114,6 @@ nav .current-menu-item a { border-bottom: 1px solid red; color: red; }
 .content a { border-bottom: 1px solid red; color: red; text-decoration: none; }
 
 .content .indented, .hero .indented { padding: 0 9%; }
-
-.hero.about .title, .hero.commission .title, .hero.classes .title, .hero.classes .jos { position: relative; }
-
-.about ul li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
 
 .about ul { border-top: 1px solid #d6d6d6; padding: 1.25em 0 2.5em 0; margin: 0; }
 .about ul li { margin-bottom: 1em; width: 100%; list-style: none; }
@@ -151,12 +138,10 @@ nav .current-menu-item a { border-bottom: 1px solid red; color: red; }
 
 .address p { margin: 0; padding: 0; }
 
+.map-link { display: none; }
+
 .feature { margin: 6.25em 0 3.125em 0; }
 .feature img { margin: 0.625em auto; padding: 0; }
-
-.hero.about .title, .hero.commission .title, .hero.classes .title, .hero.classes .jos { position: relative; }
-
-.about ul li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
 
 @media all and (max-width: 62.5em) { .hamburger { background: url("./images/hamburger.png") no-repeat scroll center center red; background-size: 50%; border: 1px solid red; border-radius: 3px; display: block; float: right; height: 2.375em; width: 3.5em; margin-top: 1.3125em; }
   .active header nav { display: block; }
@@ -176,34 +161,22 @@ nav .current-menu-item a { border-bottom: 1px solid red; color: red; }
   footer nav a { margin-bottom: 1.25em; }
   footer nav a:hover { border-bottom: none; }
   .hero .introduction { width: 100%; margin-left: -50%; padding: 0 0.625em; } }
-.hero.about .title, .hero.commission .title, .hero.classes .title, .hero.classes .jos { position: relative; }
-
-.about ul li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
-
 @media all and (max-width: 53.125em) { .hero h1 { font-size: 3.125em; }
   .hero .jos { margin-top: -1.875em; }
   .content .indented { padding: 0 6%; } }
-.hero.about .title, .hero.commission .title, .hero.classes .title, .hero.classes .jos { position: relative; }
-
-.about ul li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
-
 @media all and (max-width: 45.5em) { .hero h1 { font-size: 2.25em; }
   .hero .jos { padding-top: 0.75em; padding-bottom: 0.75em; }
   .content { padding: 2.5em 0; }
-  .content .indented { padding: 0; } }
-.hero.about .title, .hero.commission .title, .hero.classes .title, .hero.classes .jos { position: relative; }
-
-.about ul li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
-
+  .content .indented { padding: 0; }
+  .address div:first-child { margin-bottom: 3.75em; }
+  .address p { margin-bottom: 0.625em; }
+  .map-link { display: block; }
+  .bp3-p-1 { width: 100%; } }
 @media all and (max-width: 30.0625em) { .hero .introduction { top: 30%; }
   .hero .introduction .title { font-size: 1.75em; }
   .hero .jos { display: block; padding: 0.75em 1.25em; margin-top: -1.875em; }
   .content { padding: 2.5em 0; }
   .content .indented { padding: 0; } }
-.hero.about .title, .hero.commission .title, .hero.classes .title, .hero.classes .jos { position: relative; }
-
-.about ul li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
-
 @media all and (max-width: 23.75em) { .content img { width: 100%; margin: 1em auto; }
   .content ul { font-size: 1.125em; }
   p { font-size: 1.125em; }

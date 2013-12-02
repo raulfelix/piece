@@ -10,21 +10,6 @@ $highlight: #ff0000;
 $medium-1: #d6d6d6;
 
 //
-// placeholders
-//
-%relative {
-  position: relative;
-}
-
-%clearfix:after {
-  content: '';
-  height: 0;
-  clear: both;
-  display: block;
-  visibility: hidden;
-}
-
-//
 // Mixins
 //
 @mixin transition($properties...) {
@@ -53,17 +38,6 @@ $medium-1: #d6d6d6;
      -moz-box-sizing: $property;
        -o-box-sizing: $property;
           box-sizing: $property;
-}
-
-@mixin font-smoothing($state: on) {
-  @if $state == on {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  @else {
-    -webkit-font-smoothing: subpixel-antialiased;
-    -moz-osx-font-smoothing: auto;
-  }
 }
 
 //

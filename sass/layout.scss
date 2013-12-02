@@ -60,7 +60,7 @@ footer {
 }
 
 .hero {
-  position: relative;
+  @extend %relative;
   img {
     width: 100%;
     display: block;
