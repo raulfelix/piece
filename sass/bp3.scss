@@ -1,7 +1,44 @@
 @import "util";
+
 @media all and (max-width: em(728)) {
-  .hero { 
+  
+  .bp3-p-1 {
+    width: 100%;
+  }
+
+  .content {
+    img {
+      width: 100%;
+      margin: em(16) auto;
+    }
     
+    ul {
+      font-size: em(18);
+    }
+  }
+
+  .gallery {
+    img {
+      margin: 0;
+    }
+  }
+
+  p {
+    font-size: em(18);
+    &.intro {
+      font-size: em(24);
+      margin-bottom: em(35, 24px);
+    }
+  }
+  h1 {
+    font-size: em(32);
+    margin-top: em(50, 32px);
+  }
+  h3 { 
+    font-size: em(24);
+  }
+
+  .hero { 
     h1 {
       font-size: em(36);
     }
@@ -13,9 +50,6 @@
 
   .content {
     padding: em(40) 0;
-    .indented {
-      padding: 0;
-    }
   }
 
   .address {
@@ -29,7 +63,44 @@
   .map-link {
     display: block;
   }
-  .bp3-p-1 {
-    width: 100%;
+  
+
+  .hero {
+    &.commission {
+      .title {
+        font-size: em(30);
+        margin-top: 0;
+        top: 70%;
+      }
+    }
+
+    &.about {
+      .title {
+        margin-top: em(-20, 30px);
+        font-size: em(30);
+      }
+    }
+
+    &.classes {
+      text-align: center;
+      .title {
+        top: 40%;
+      }
+      .jos {
+        display: block;
+        float: left;
+        margin-top: -18%;
+        padding-top: em(12);
+        padding-bottom: em(12);
+        width: 100%;
+
+      }
+    }
+  }
+
+  .feature {
+    img {
+      margin: em(10) 0;
+    }
   }
 }

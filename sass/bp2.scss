@@ -16,9 +16,16 @@
   }
 
   .content {
-    padding: em(40) 0;
-    .indented {
-      padding: 0;
-    }
+    padding-top: em(40);
+    padding-bottom: em(40);
+  }
+
+  .content .indented, 
+  .hero .indented {
+    padding: 0 em(10);
+  }
+
+  .p-grid-row {
+    padding: 0;
   }
 }

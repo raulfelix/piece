@@ -5,7 +5,7 @@ Author URI: http://www.raulfelixcarrizo.com
 Description: Fine furniture portfolio site theme
 Version: 1.0
 */
-.hero, .hero.about .title, .hero.commission .title, .hero.classes .title, .hero.classes .jos { position: relative; }
+.hero, .hero.classes .jos { position: relative; }
 
 .about ul li:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
 
@@ -31,7 +31,6 @@ img { height: auto; }
 .p-grid { max-width: 71.25em; margin: 0 auto; }
 
 .p-grid-row { padding: 0 0.625em; }
-.p-grid-row .p-grid-row { padding: 0; }
 .p-grid-row > div { float: left; padding: 0 0.625em; }
 .p-grid-row:after { content: ''; height: 0; clear: both; display: block; visibility: hidden; }
 
@@ -65,17 +64,17 @@ body { font-family: "chaparral-pro"; font-size: 16px; font-weight: 400; font-sty
 
 blockquote { font-size: 26px; line-height: 28px; font-style: normal; font-weight: 400; text-align: left; text-indent: 0px; font-family: "chaparral-pro"; color: black; margin: 0px 0px 48px 2em; border-width: 0px 0px 0px 5px; border-style: solid; padding: 0px 0px 0px 16px; }
 
-h1 { font-size: 3em; line-height: 1em; font-style: italic; font-weight: 300; font-family: "chaparral-pro", "Helivetica Neue", Helvetica, Arial; color: black; margin: 60px 0px 20px 0px; }
+h1 { font-size: 3em; line-height: 1em; font-style: italic; font-weight: 300; font-family: "chaparral-pro", sans-serif; color: black; margin: 1.25em 0 0.41667em 0; }
 
-h2 { font-size: 2.25em; line-height: 0.667em; letter-spacing: 1px; font-weight: 300; font-style: italic; font-family: "chaparral-pro", "Helivetica Neue", Helvetica, Arial; color: black; margin: 0px 0px 0.667em 0px; }
+h2 { font-size: 2.25em; line-height: 0.667em; letter-spacing: 1px; font-weight: 300; font-style: italic; font-family: "chaparral-pro", sans-serif; color: black; margin: 0 0 0.667em 0; }
 
-p { text-indent: 0px; font-size: 1.375em; font-style: normal; font-weight: 400; font-family: "chaparral-pro"; color: black; line-height: 1.455em; margin: 0px 0px 0.5em 0px; border-width: 0px; border-style: solid; padding: 0.5em 0px; border-color: lightgrey; }
+p { text-indent: 0; font-size: 1.375em; font-style: normal; font-weight: 400; font-family: "chaparral-pro"; color: black; line-height: 1.455em; margin: 0 0 1.81818em 0; border-width: 0; border-style: solid; padding: 0; border-color: lightgrey; }
 
-.intro { text-indent: 0px; line-height: 1.25em; font-size: 2em; font-style: normal; font-weight: 400; letter-spacing: 0px; font-family: "chaparral-pro"; color: black; margin: 0 0 1.5em 0; }
+.intro { text-indent: 0px; line-height: 1.25em; font-size: 2em; font-style: normal; font-weight: 400; letter-spacing: 0px; font-family: "chaparral-pro"; color: black; margin: 0 0 1.5625em 0; padding: 0; }
 
 h3 { font-size: 32px; font-family: "chaparral-pro", "Helivetica Neue", Helvetica, Arial; font-weight: 300; font-style: italic; line-height: 40px; margin: 0px 0px 0.3125em 0px; }
 
-h1.title { font-family: "Din Display Pro Light Italic", "Helivetica Neue", Helvetica, Arial; font-weight: 200; font-style: italic; font-size: 3.75em; margin: 0px 0px 96px 0px; line-height: 1em; }
+h1.title { font-family: "Europa", "Helivetica Neue", Helvetica, Arial; font-weight: 200; font-style: italic; font-size: 3.75em; margin: 0px 0px 96px 0px; line-height: 1em; }
 
 p.list { margin: 0px 0px 48px 2em; font-size: 1.375em; line-height: 1.455em; border-style: none; }
 
@@ -100,7 +99,7 @@ footer .up { font-size: 1.125em; background-color: #d6d6d6; color: #fff; border-
 footer .p-1 { position: relative; }
 
 .hero img { width: 100%; display: block; }
-.hero h1 { font-size: 40px; font-family: "Din Display Pro Light Italic"; font-weight: 200; font-style: italic; font-size: 3.75em; color: #fff; margin-bottom: 2.5em; }
+.hero h1 { font-family: "Europa", "Times New Roman"; font-weight: 200; font-style: italic; font-size: 3.75em; color: #fff; margin-bottom: 0; text-transform: uppercase; }
 
 nav { float: right; margin-top: 1.9375em; }
 nav li { float: left; padding: 0 1em; }
@@ -110,7 +109,7 @@ nav a:hover { border-bottom: 1px solid red; }
 nav .current-menu-item a { border-bottom: 1px solid red; color: red; }
 
 .content { padding: 6.25em 0; }
-.content img { width: 80%; display: block; margin: 3.125em auto; }
+.content img { width: 80%; display: block; margin: 3.125em auto 2.5em; }
 .content a { border-bottom: 1px solid red; color: red; text-decoration: none; }
 
 .content .indented, .hero .indented { padding: 0 9%; }
@@ -120,16 +119,19 @@ nav .current-menu-item a { border-bottom: 1px solid red; color: red; }
 .about ul li div:first-child { float: left; width: 18%; }
 .about ul li div:last-child { float: left; width: 82%; }
 
-.hero.about .title { color: #000; width: 20%; margin: -4.375em 0 0 0; }
-.hero.commission .title { color: #fff; margin: -5.625em 0 0 0; }
-.hero.classes .title { color: #fff; margin: -2.5em 0 0 0; }
-.hero.classes .jos { float: right; margin-top: -3.75em; padding-left: 3.75em; padding-right: 3.75em; }
+.hero.about .title { color: #000; width: 20%; position: absolute; top: 65%; margin-top: -30px; }
+.hero.commission .title { position: absolute; top: 50%; margin-top: -30px; }
+.hero.classes .title { color: #fff; position: absolute; top: 70%; margin-top: -30px; }
+.hero.classes .jos { float: right; margin-top: -20%; padding-left: 3.75em; padding-right: 3.75em; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
 .hero .introduction { position: absolute; top: 30%; left: 50%; width: 60%; margin-left: -30%; text-align: center; }
+.hero .introduction .title { text-transform: none; margin-bottom: 20%; }
 .hero .jos { background-color: #fff; padding: 1.25em 7.5em; color: red; border-radius: 3px; }
 
 .gallery img { padding: 0; margin: 0; width: 100%; }
+.gallery .title { margin-bottom: 0; }
 .gallery h3 { margin-top: 2.5em; }
-.gallery .p-grid-row { margin-bottom: 2.5em; }
+.gallery .p-grid-row { margin-bottom: 0; }
+.gallery .caption { margin-top: 0.3125em; margin-bottom: 1.25em; }
 
 .contact h1 { color: #000; margin-bottom: 1.25em; margin-top: 0; }
 .contact .p-1-2 { float: left; }
@@ -163,28 +165,36 @@ nav .current-menu-item a { border-bottom: 1px solid red; color: red; }
   .hero .introduction { width: 100%; margin-left: -50%; padding: 0 0.625em; } }
 @media all and (max-width: 53.125em) { .hero h1 { font-size: 3.125em; }
   .hero .jos { margin-top: -1.875em; }
-  .content .indented { padding: 0 6%; } }
-@media all and (max-width: 45.5em) { .hero h1 { font-size: 2.25em; }
+  .content .indented, .hero .indented { padding: 0 6%; }
+  .hero.commission .title { margin-top: -0.625em; } }
+@media all and (max-width: 45.5em) { .bp3-p-1 { width: 100%; }
+  .content img { width: 100%; margin: 1em auto; }
+  .content ul { font-size: 1.125em; }
+  .gallery img { margin: 0; }
+  p { font-size: 1.125em; }
+  p.intro { font-size: 1.5em; margin-bottom: 1.45833em; }
+  h1 { font-size: 2em; margin-top: 1.5625em; }
+  h3 { font-size: 1.5em; }
+  .hero h1 { font-size: 2.25em; }
   .hero .jos { padding-top: 0.75em; padding-bottom: 0.75em; }
   .content { padding: 2.5em 0; }
-  .content .indented { padding: 0; }
   .address div:first-child { margin-bottom: 3.75em; }
   .address p { margin-bottom: 0.625em; }
   .map-link { display: block; }
-  .bp3-p-1 { width: 100%; } }
+  .hero.commission .title { font-size: 1.875em; margin-top: 0; top: 70%; }
+  .hero.about .title { margin-top: -0.66667em; font-size: 1.875em; }
+  .hero.classes { text-align: center; }
+  .hero.classes .title { top: 40%; }
+  .hero.classes .jos { display: block; float: left; margin-top: -18%; padding-top: 0.75em; padding-bottom: 0.75em; width: 100%; }
+  .feature img { margin: 0.625em 0; } }
 @media all and (max-width: 30.0625em) { .hero .introduction { top: 30%; }
   .hero .introduction .title { font-size: 1.75em; }
   .hero .jos { display: block; padding: 0.75em 1.25em; margin-top: -1.875em; }
-  .content { padding: 2.5em 0; }
-  .content .indented { padding: 0; } }
-@media all and (max-width: 23.75em) { .content img { width: 100%; margin: 1em auto; }
-  .content ul { font-size: 1.125em; }
-  p { font-size: 1.125em; }
-  h1 { font-size: 2em; }
-  h3 { font-size: 1.5em; }
-  .bp1-p-1 { width: 100%; }
-  .intro { font-size: 1.5em; margin-bottom: 0.83333em; }
+  .content { padding-top: 2.5em; padding-bottom: 2.5em; }
+  .content .indented, .hero .indented { padding: 0 0.625em; }
+  .p-grid-row { padding: 0; } }
+@media all and (max-width: 23.75em) { .bp1-p-1 { width: 100%; }
   .hero .introduction { top: 20%; }
+  .hero .introduction .title { margin-bottom: 23%; }
   .hero .jos { margin-top: -3.75em; }
-  .hero.commission .title { font-size: 1.875em; margin: -2.5em 0; }
   footer .legal { font-size: 13px; } }
