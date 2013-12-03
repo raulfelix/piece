@@ -28,6 +28,8 @@ a:hover { color: red; text-decoration: none; }
 
 img { height: auto; }
 
+.typekit-badge { display: none !important; }
+
 .p-grid { max-width: 71.25em; margin: 0 auto; }
 
 .p-grid-row { padding: 0 0.625em; }
