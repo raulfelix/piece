@@ -11,7 +11,7 @@ Template Name: classes
   <div class="p-grid p-grid-row">
     <div class="p-1 indented">
       <h1 class="title">classes</h1>
-      <a href="<?php echo get_page_link(7); ?>" class="jos">View term calendar</a>
+      <a href="<?php echo get_page_link(78); ?>" class="jos">View term calendar</a>
     </div>
   </div>
 </div>

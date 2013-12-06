@@ -96,6 +96,25 @@
   }
 }
 
+.calendar {
+  ul {
+    border-bottom: 1px solid $medium-2;
+    margin-left: 0;
+    margin-bottom: em(80);
+    li {
+      border-top: 1px solid $medium-2;
+      list-style: none;
+      padding: em(10) 0;
+      span + span {
+        min-width: 28%;
+      }
+    }
+  }
+  span {
+    display: inline-block;
+    min-width: 10%;
+  }
+}
 .contact {
   h1 {
     color: #000;

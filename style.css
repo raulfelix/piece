@@ -135,6 +135,11 @@ nav .current-menu-item a { border-bottom: 1px solid red; color: red; }
 .gallery .p-grid-row { margin-bottom: 0; }
 .gallery .caption { margin-top: 0.3125em; margin-bottom: 1.25em; }
 
+.calendar ul { border-bottom: 1px solid #dedede; margin-left: 0; margin-bottom: 5em; }
+.calendar ul li { border-top: 1px solid #dedede; list-style: none; padding: 0.625em 0; }
+.calendar ul li span + span { min-width: 28%; }
+.calendar span { display: inline-block; min-width: 10%; }
+
 .contact h1 { color: #000; margin-bottom: 1.25em; margin-top: 0; }
 .contact .p-1-2 { float: left; }
 .contact a { color: red; border-bottom: none; }
@@ -176,6 +181,7 @@ nav .current-menu-item a { border-bottom: 1px solid red; color: red; }
   p { font-size: 1.125em; }
   p.intro { font-size: 1.5em; margin-bottom: 1.45833em; }
   h1 { font-size: 2em; margin-top: 1.5625em; }
+  h1.title { font-size: 2.5em; }
   h3 { font-size: 1.5em; }
   .hero h1 { font-size: 2.25em; }
   .hero .jos { padding-top: 0.75em; padding-bottom: 0.75em; }
