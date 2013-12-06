@@ -22,4 +22,17 @@
       margin-top: em(-10);
     }
   }
+
+  .calendar {
+    ul {
+      li {
+        span + span {
+          min-width: 34%;
+        }
+      }
+    }
+    span {
+      min-width: 12%;
+    }
+  }
 }

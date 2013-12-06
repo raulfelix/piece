@@ -106,4 +106,21 @@
       margin: em(10) 0;
     }
   }
+
+  .calendar {
+    ul {
+      li {
+        span + span {
+          min-width: 40%;
+        }
+      }
+    }
+    span {
+      min-width: 14%;
+    }
+  }
+
+  .contact img {
+    display: none;
+  }
 }

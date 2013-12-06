@@ -137,7 +137,7 @@ nav .current-menu-item a { border-bottom: 1px solid red; color: red; }
 
 .calendar ul { border-bottom: 1px solid #dedede; margin-left: 0; margin-bottom: 5em; }
 .calendar ul li { border-top: 1px solid #dedede; list-style: none; padding: 0.625em 0; }
-.calendar ul li span + span { min-width: 28%; }
+.calendar ul li span + span { min-width: 32%; }
 .calendar span { display: inline-block; min-width: 10%; }
 
 .contact h1 { color: #000; margin-bottom: 1.25em; margin-top: 0; }
@@ -173,7 +173,9 @@ nav .current-menu-item a { border-bottom: 1px solid red; color: red; }
 @media all and (max-width: 53.125em) { .hero h1 { font-size: 3.125em; }
   .hero .jos { margin-top: -1.875em; }
   .content .indented, .hero .indented { padding: 0 6%; }
-  .hero.commission .title { margin-top: -0.625em; } }
+  .hero.commission .title { margin-top: -0.625em; }
+  .calendar ul li span + span { min-width: 34%; }
+  .calendar span { min-width: 12%; } }
 @media all and (max-width: 45.5em) { .bp3-p-1 { width: 100%; }
   .content img { width: 100%; margin: 1em auto; }
   .content ul { font-size: 1.125em; }
@@ -194,13 +196,18 @@ nav .current-menu-item a { border-bottom: 1px solid red; color: red; }
   .hero.classes { text-align: center; }
   .hero.classes .title { top: 40%; }
   .hero.classes .jos { display: block; float: left; margin-top: -18%; padding-top: 0.75em; padding-bottom: 0.75em; width: 100%; }
-  .feature img { margin: 0.625em 0; } }
+  .feature img { margin: 0.625em 0; }
+  .calendar ul li span + span { min-width: 40%; }
+  .calendar span { min-width: 14%; }
+  .contact img { display: none; } }
 @media all and (max-width: 30.0625em) { .hero .introduction { top: 30%; }
   .hero .introduction .title { font-size: 1.75em; }
   .hero .jos { display: block; padding: 0.75em 1.25em; margin-top: -1.875em; }
   .content { padding-top: 2.5em; padding-bottom: 2.5em; }
   .content .indented, .hero .indented { padding: 0 0.625em; }
-  .p-grid-row { padding: 0; } }
+  .p-grid-row { padding: 0; }
+  .calendar ul li span:last-child { display: block; margin-left: 18%; }
+  .calendar span { min-width: 18%; } }
 @media all and (max-width: 23.75em) { .bp1-p-1 { width: 100%; }
   .hero .introduction { top: 20%; }
   .hero .introduction .title { margin-bottom: 23%; }
