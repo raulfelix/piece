@@ -1,3 +1,5 @@
-=== Piece Furniture ===
+Piece Furniture
+---------------
 
-Portfolio site for maker of fine furniture. Powered by Wordpress and using HTML5 and CSS3 to bring it to life. 
+This is a portfolio site built for a fine furniture maker/teacher. Design carried out by Jonny Brian.
+Powered by Wordpress built with HTML5, CSS3 and Javascript.
