@@ -7,7 +7,6 @@ Template Name: commission
 <?php get_header(); ?>
 
 <div class="hero commission">
-  <img src="<?php echo get_template_directory_uri(); ?>/images/commission.jpg">
   <div class="p-grid p-grid-row">
     <div class="p-1 indented">
       <h1 class="title">commission a piece</h1>

@@ -17,7 +17,8 @@ header {
     height: em(80);
     width: em(125);
     float: left;
-    background: url('./images/logo.png') no-repeat center center transparent;
+    background: url('./images/logo_lg.png') no-repeat center center transparent;
+    background-size: 80% auto;
   }
   span {
     display: block;
@@ -62,7 +63,7 @@ footer {
 .hero {
   @extend %relative;
   img {
-    width: 100%;
+    // width: 100%;
     display: block;
   }
 

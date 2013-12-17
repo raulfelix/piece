@@ -7,10 +7,11 @@ Template Name: classes
 <?php get_header(); ?>
 
 <div class="hero classes">
-  <img src="<?php echo get_template_directory_uri(); ?>/images/classes.jpg">
   <div class="p-grid p-grid-row">
     <div class="p-1 indented">
       <h1 class="title">classes</h1>
+    </div>
+    <div class="more-wrap">
       <a href="<?php echo get_page_link(78); ?>" class="jos">View term calendar</a>
     </div>
   </div>

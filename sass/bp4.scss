@@ -3,12 +3,23 @@
 @media all and (max-width: em(850)) {
   
   .hero { 
+    height: em(550);
+    
+    &.home {
+      height: em(550);
+      background-size: 135% auto;
+    }
+
+    &.about, &.classes {
+      background-size: 180% auto;
+    }
+
     h1 {
       font-size: em(50);
     }
 
-    .jos {
-      margin-top: em(-30);
+    .introduction {
+      margin-top: em(160);
     }
   }
 

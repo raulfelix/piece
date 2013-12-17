@@ -7,16 +7,27 @@
   }
 
   .hero {
+
+    &.home {
+      background-size: 170% auto;
+    }
+
+    &.commission, &.classes, &.about {
+      background-size: 250% auto;
+    }
+
     .introduction {
-      top: 20%;
+      top: 36%;
 
       .title {
-        margin-bottom: 23%;
+        margin-bottom: 18%;
       }
     }
-    .jos {
-      margin-top: em(-60);
-    }
+  }
+
+  .more-wrap, .classes .more-wrap {
+    width: em(300);
+    margin-left: em(-150);
   }
 
   footer {

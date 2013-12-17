@@ -23,7 +23,17 @@
 }
 
 .hero {
+  height: em(600);
+  overflow: hidden;
+  padding: 0 em(10);
+  position: relative;
+
+  &.home {
+    height: em(800);
+    background: url('./images/hero.jpg') no-repeat center center;
+  }
   &.about {
+    background: url('./images/about_a.jpg') no-repeat center center;
     .title {
       color: #000;
       width: 20%;
@@ -33,6 +43,7 @@
     }
   }
   &.commission {
+    background: url('./images/commission_a.jpg') no-repeat center center;
     .title {
       position: absolute;
       top: 50%;
@@ -40,39 +51,59 @@
     }
   }
   &.classes {
+    background: url('./images/classes_a.jpg') no-repeat center center;
     .title {
       color: #fff;
       position: absolute;
       top: 70%;
       margin-top: -30px;
     }
-    .jos {
-      float: right;
-      margin-top: -20%;
-      padding-left: em(60); 
-      padding-right: em(60);
-      @include box-sizing(border-box);
-      @extend %relative; 
+
+    .more-wrap {
+      float: none;
+      bottom: 25%;
+      right: 10%;
+      margin: 0;
+      width: em(280);
+      position: absolute;
     }
   }
+
   .introduction {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    width: 60%;
-    margin-left: -30%;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: em(100);
+    margin-top: em(220);
     text-align: center;
     .title {
       text-transform: none;
-      margin-bottom: 20%;
     }
   }
+
   .jos {
     background-color: #fff;
-    padding: em(20) em(120);
-    color: $highlight;
     border-radius: 3px;
+    color: $highlight;
+    display: block;
+    padding: em(20) 0;
+    text-align: center;
   }
+}
+
+.more-wrap {
+  margin: 0 auto;
+  width: em(480);
+}
+
+.more {
+  background-color: #fff;
+  padding: em(20) em(120);
+  color: $highlight;
+  border-radius: 3px;
+  border-bottom: none !important;
+  display: block;
+  margin: 0 auto;
+  width: em(500);
 }
 
 .gallery {
@@ -93,6 +124,28 @@
   .caption {
     margin-top: em(5);
     margin-bottom: em(20);
+  }
+}
+
+.gallery-detail {
+  padding-top: em(20);
+  p, a {
+    text-align: center;
+    display: block;
+    border-bottom: none;
+  }
+
+  img {
+    width: 100%;
+    margin: em(20) auto;
+  }
+
+  .more {
+    margin: em(120) auto;
+  }
+
+  img:last-child {
+    margin-bottom: em(80);
   }
 }
 

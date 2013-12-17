@@ -97,9 +97,19 @@
 
   .hero { 
     .introduction {
-      width: 100%;
-      margin-left: -50%;
-      padding: 0 em(10);
+      margin-top: em(200);
+    }
+
+    &.about, &.classes {
+      background-size: 170% auto;
+    }
+  }
+}
+
+@media all and (min-width: em(1801)) {
+  .hero {
+    &.home, &.about, &.commission, &.classes {
+      background-size: 100% auto;
     }
   }
 }
