@@ -9,7 +9,7 @@ Template Name: contact
 <div class="content contact">
   <div class="p-grid p-grid-row">
     <div class="p-1 indented">
-      <h1>Contact</h1>
+      <h1 class="title">Contact</h1>
       <p class="intro">John Gallagher is available 7 days by appointment only</p>
     </div>
   </div>
@@ -29,10 +29,41 @@ Template Name: contact
   </div>
   <div class="p-grid p-grid-row">
     <div class="p-1 indented">
+      <div id="map-canvas"></div>
       <a class="map-link" href="javascript:void(0)">View on a map</a>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/map.jpg">
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  function initialize() {
+
+    var latLng = new google.maps.LatLng(-33.908021, 151.159555);
+    var mapOptions = {
+      zoom: 14,
+      center: latLng
+    };
+
+    var marker = new google.maps.Marker({
+      position: latLng,
+      title: "Piece Furniture"
+    });
+
+    var map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
+
+    marker.setMap(map);
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBKWK2F558TwkR52T7QziOlYvmHFRvMg44&v=3.exp&sensor=false&' +
+        'callback=initialize';
+    document.body.appendChild(script);
+  }
+
+  window.onload = loadScript;
+</script>
 
 <?php get_footer(); ?>

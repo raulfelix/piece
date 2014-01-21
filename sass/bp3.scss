@@ -58,6 +58,9 @@
     display: block;
   }
   
+  #map-canvas {
+    display: none;
+  }
 
   .hero {
     height: em(400);
@@ -108,10 +111,6 @@
     span {
       min-width: 14%;
     }
-  }
-
-  .contact img {
-    display: none;
   }
 
   .gallery-detail {

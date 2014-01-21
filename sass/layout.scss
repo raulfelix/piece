@@ -68,13 +68,12 @@ footer {
   }
 
   h1 {
-    font-family: "Europa", "Times New Roman";
-    font-weight: 200;
-    font-style: italic;
+    font-family:"Apercu Pro Medium", 'Trebuchet MS', Arial, sans-serif; 
+    font-weight: 600; 
+    font-style: normal;
     font-size: 3.75em;
     color: #fff;
     margin-bottom: 0;
-    text-transform: uppercase;
   }
 }
 
@@ -123,4 +122,11 @@ nav {
 .content .indented, 
 .hero .indented {
   padding: 0 9%;
+}
+
+#map-canvas {
+  min-height: em(400);
+  display: block;
+  margin: 3.75em 0 0 0;
+  width: 100%;
 }
