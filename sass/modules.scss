@@ -1,5 +1,17 @@
 @import "util";
 
+.button {
+  margin: 0 auto;
+  width: em(200);
+  a { 
+    font-family: "Univers LT W01 55 Roman";
+  }
+  a:hover {
+    background-color: $highlight;
+    color: #fff;
+  }
+}
+
 .about {
   ul {
     border-top: 1px solid $medium-1;
@@ -28,10 +40,16 @@
   padding: 0 em(10);
   position: relative;
 
+  .p-grid-row, .p-1 {
+    height: 100%;
+    @extend %relative;
+  }
+
   &.home {
     height: em(800);
     background: url('./images/hero.jpg') no-repeat center center;
   }
+
   &.about {
     background: url('./images/about_a.jpg') no-repeat center center;
     .title {
@@ -42,6 +60,7 @@
       margin-top: -30px;
     }
   }
+
   &.commission {
     background: url('./images/commission_a.jpg') no-repeat center center;
     .title {
@@ -50,8 +69,10 @@
       margin-top: -30px;
     }
   }
-  &.classes {
+
+  &.hero-classes {
     background: url('./images/classes_a.jpg') no-repeat center center;
+    
     .title {
       color: #fff;
       position: absolute;
@@ -59,51 +80,52 @@
       margin-top: -30px;
     }
 
-    .more-wrap {
-      float: none;
-      bottom: 25%;
-      right: 10%;
-      margin: 0;
-      width: em(280);
+    .button {
       position: absolute;
+      width: em(260);
+      right: 0;
+      top: 67%;
+      margin-right: 9%;
     }
   }
 
-  .introduction {
-    width: 70%;
+  .hero-text {
+    width: 55%;
     margin: 0 auto;
     margin-bottom: em(100);
     margin-top: em(220);
     text-align: center;
     .title {
+      color: #fff;
       text-transform: none;
+      font-weight: normal;
     }
   }
 
   .jos {
     background-color: #fff;
     border-radius: 3px;
-    color: $highlight;
     display: block;
     padding: em(20) 0;
     text-align: center;
+    font-weight: bold;
   }
 }
 
-.more-wrap {
-  margin: 0 auto;
-  width: em(480);
-}
 
-.more {
+a.more {
   background-color: #fff;
   padding: em(20) em(120);
-  color: $highlight;
+  color: #000;
   border-radius: 3px;
   border-bottom: none !important;
   display: block;
   margin: 0 auto;
   width: em(500);
+  &:hover {
+    background-color: $highlight;
+    color: #fff;
+  }
 }
 
 .gallery {
@@ -112,8 +134,8 @@
     margin: 0;
     width: 100%;
   }
-  .title {
-    margin-bottom: 0;
+  &.content {
+    padding-top: 0;
   }
   h3 {
     margin-top: em(40);
@@ -168,6 +190,7 @@
     min-width: 10%;
   }
 }
+
 .contact {
   h1 {
     color: #000;

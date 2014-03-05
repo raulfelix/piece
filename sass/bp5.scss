@@ -3,10 +3,8 @@
 @media all and (max-width: em(1000)) {
 
   .hamburger {
-    background: url('./images/hamburger.png') no-repeat scroll center center $highlight;
+    background: url('./images/hamburger@2x.png') no-repeat scroll center center;
     background-size: 50%;
-    border: 1px solid $highlight;
-    border-radius: 3px;
     display: block;
     float: right;
     height: em(38);
@@ -25,10 +23,16 @@
   }
 
   header {
+    height: em(80);
+
     span {
       display: none;
     }
 
+    .logo {
+      height: em(80);
+      width: em(140);
+    }
     nav {
       display: none;
       background-color: #fff;
@@ -75,7 +79,7 @@
       text-align: center;
     }
     .up {
-      top: em(-58, 18px);
+      top: em(-58, 10px);
     } 
     nav { 
       float: none;
@@ -96,17 +100,30 @@
   }
 
   .hero { 
-    .introduction {
-      margin-top: em(200);
+    .hero-text {
+      width: 65%;
     }
+    // &.about, &.classes {
+    //   background-size: 170% auto;
+    // }
+  }
+}
 
-    &.about, &.classes {
-      background-size: 170% auto;
+@media all and (min-width: em(1441)) {
+  .hero {
+    .hero-text {
+      width: 40%;
+    }
+    &.home {
+       background-size: 100% auto;
+    }
+    &.commission {
+      background-size: 120% auto;
     }
   }
 }
 
-@media all and (min-width: em(1140)) {
+@media all and (min-width: em(1800)) {
   .hero {
     &.home, &.about, &.commission, &.classes {
       background-size: 100% auto;

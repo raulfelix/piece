@@ -6,13 +6,17 @@ Template Name: gallery
 
 <?php get_header(); ?>
 
-<div class="content gallery">
-  <div class="p-grid">
-    <div class="p-grid-row">
+<div class="content has-secondary-title">
+  <div class="extra-header">
+    <div class="p-grid p-grid-row">
       <div class="p-1">
-        <h1 class="title">GALLERY</h1>
+        <h1 class="title">Gallery</h1>
       </div>
     </div>
+  </div>
+</div>  
+
+<div class="content gallery p-grid">
     <?php
       // get all the categories from the database
       $cats = get_categories(); 
@@ -48,7 +52,6 @@ Template Name: gallery
         
         ?>
       <?php } // done foreach ?>
-    </div>
-  </div>
+</div>
 
 <?php get_footer(); ?>

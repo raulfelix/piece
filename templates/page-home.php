@@ -7,11 +7,11 @@ Template Name: home
 <?php get_header(); ?>
 
 <div class="hero home">
-  <div class="introduction">
+  <div class="hero-text">
     <h1 class="title">Hand-crafted, modern, thoughtfully designed furniture</h1>
   </div>
-  <div class="more-wrap">
-    <a href="<?php echo get_page_link(7); ?>" class="jos">See more of John Gallagher's work</a>
+  <div class="button">
+    <a href="<?php echo get_page_link(10); ?>" class="jos">View the gallery</a>
   </div>
 </div>
 <div class="content">

@@ -10,22 +10,24 @@ body {
 }
 
 header {
-  height: em(80);
+  height: em(150);
   background-color: #fff;
 
   .logo {
-    height: em(80);
-    width: em(125);
+    height: em(150);
+    width: em(184);
     float: left;
-    background: url('./images/logo_lg.png') no-repeat center center transparent;
+    background: url('./images/logo-retina.png') no-repeat center center transparent;
     background-size: 80% auto;
+    @extend %relative;
   }
   span {
+    color: #aaa9a9;
     display: block;
-    font-size: em(14);
-    float: left;
-    margin-top: em(30, 14px);
-    margin-left: em(10, 14px);
+    font-size: em(12);
+    position: absolute;
+    top: em(105, 12px);
+    left: em(20, 12px);
   }
 }
 
@@ -44,14 +46,16 @@ footer {
   }
 
   .up {
-    font-size: em(18);
+    font-size: em(10);
+    text-transform: uppercase;
+    letter-spacing: 5px;
     background-color: #d6d6d6;
     color: #fff;
     border-radius: 3px;
-    margin-left: em(-62, 18px);
-    padding: em(5, 18px) em(20, 18px);
+    margin-left: em(-80, 10px);
+    padding: em(10, 10px) em(20, 10px);
     position: absolute;
-    top: em(-154, 18px);
+    top: em(-154, 10px);
     left: 50%;
   }
 
@@ -63,23 +67,16 @@ footer {
 .hero {
   @extend %relative;
   img {
-    // width: 100%;
     display: block;
   }
-
-  h1 {
-    font-family:"Apercu Pro Medium", 'Trebuchet MS', Arial, sans-serif; 
-    font-weight: 600; 
-    font-style: normal;
-    font-size: 3.75em;
+  .title {
     color: #fff;
-    margin-bottom: 0;
   }
 }
 
 nav { 
   float: right;
-  margin-top: em(31);
+  margin-top: em(65);
   
   li {
     float: left;
@@ -104,7 +101,7 @@ nav {
 }
 
 .content {
-  padding: em(100) 0;
+  padding: em(80) 0;
 
   img {
     width: 80%;
@@ -113,10 +110,22 @@ nav {
   }
 
   a {
-    border-bottom: 1px solid $highlight;
     color: $highlight;
-    text-decoration: none;
+    &:hover {
+      border-bottom: 1px solid $highlight;
+      text-decoration: none;
+    }
   }
+}
+
+.has-secondary-title {
+  padding-top: 0; 
+
+  .extra-header {
+    background-color: #fff;
+    padding-top: em(40);
+  }
+
 }
 
 .content .indented, 

@@ -1,7 +1,7 @@
 	<footer>
 		<div class="p-grid p-grid-row">
       <div class="p-1">
-        <a href="#" class="up">Back to top</a>
+        <a href="javascript:void(0)" class="up">Back to top</a>
         <nav>
 	        <ul>
 	  				<?php wp_nav_menu( array( 'container'=> false, 'items_wrap' => '%3$s' ) ); ?>

@@ -6,13 +6,15 @@ Template Name: calendar
 
 <?php get_header(); ?>
 
-<div class="content gallery">
-  <div class="p-grid">
-    <div class="p-grid-row">
+<div class="content has-secondary-title">
+  <div class="extra-header">
+    <div class="p-grid p-grid-row">
       <div class="p-1 indented">
-        <h1 class="title">CLASS CALENDAR</h1>
+        <h1 class="title">Class Calendar</h1>
       </div>
     </div>
+  </div>
+  <div class="content p-grid">
     <div class="p-grid-row calendar">
       <div class="p-1 indented">
         <?php if (have_posts()) : while (have_posts()) : the_post();?>

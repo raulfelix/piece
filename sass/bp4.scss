@@ -5,17 +5,23 @@
   .hero { 
     height: em(550);
     
+
     &.home {
       height: em(550);
-      background-size: 135% auto;
+      background-size: 136% auto;
+      .hero-text {
+        margin-top: em(120);
+        width: 70%;
+      }
     }
 
     &.about, &.classes {
       background-size: 180% auto;
     }
 
-    h1 {
+    .title {
       font-size: em(50);
+      line-height: 1.3;
     }
 
     .introduction {

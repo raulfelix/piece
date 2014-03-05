@@ -6,20 +6,41 @@
 
     height: em(300);
     
+    .indented {
+      padding: 0;
+    }
+    
     &.home {
       background-size: 140% auto;
       height: em(300);
+
+       .hero-text {
+        margin-top: em(80);
+        width: 90%;
+      }
     }
 
-    &.commission, &.classes, &.about {
+    &.commission, &.hero-classes, &.about {
       background-size: 200% auto;
     }
 
-    .introduction {
-      margin-top: em(110);
+    &.hero-classes {
+      .button {
+        top: auto;
+        left: 0%;
+        margin-right: 0;
+        right: auto;
+        left: auto;
+        margin-left: 0;
+        width: em(300);
+      }
+    }
+
+    .hero-text {
+      margin-top: em(80);
       width: 100%;
       .title {
-        font-size: em(28);
+        font-size: em(34);
       }
     }
   }
@@ -27,10 +48,12 @@
   .content {
     padding-top: em(40);
     padding-bottom: em(40);
+    &.has-secondary-title {
+      padding-top: 0;
+    }
   }
 
-  .content .indented, 
-  .hero .indented {
+  .content .indented {
     padding: 0 em(10);
   }
 

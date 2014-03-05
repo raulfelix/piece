@@ -2,15 +2,20 @@ var Piece = (function() {
     
   var navToggle, body;
 
-  function toggleNav() {
+  function onBackToTop() {
+    jQuery('html, body').animate({
+      scrollTop: 0
+    }, 500);
+  }
 
+  function toggleNav() {
     body.toggleClass('active');
   }
 
   function init() {
     body = jQuery('body');
     navToggle = jQuery('#nav-toggle').click(toggleNav);
-    console.log("click");
+    jQuery('.up').click(onBackToTop);
   }
 
   return {

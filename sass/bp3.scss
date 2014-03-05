@@ -11,10 +11,6 @@
       width: 100%;
       margin: em(16) auto;
     }
-    
-    ul {
-      font-size: em(18);
-    }
   }
 
   .gallery {
@@ -23,39 +19,38 @@
     }
   }
 
-  p {
-    font-size: em(18);
-    &.intro {
-      font-size: em(24);
-    }
-  }
-
   h1 {
     font-size: em(32);
     margin-top: em(50, 32px);
   }
-  h1.title {
+  
+  .title {
     font-size: em(40);
   }
+
   h3 { 
     font-size: em(24);
   }
 
   .content {
     padding: em(40) 0;
+     &.has-secondary-title {
+      padding-top: 0;
+    }
   }
+
 
   .address {
     div:first-child {
       margin-bottom: em(60);
     }
     p {
-      margin-bottom: em(10);
+      margin-bottom: em(20);
     }
   }
 
   .map-link {
-    display: block;
+    display: inline-block;
   }
   
   #map-canvas {
@@ -65,23 +60,26 @@
   .hero {
     height: em(400);
     
+    .title {
+      font-size: em(42);
+    }
+
     &.home {
       height: em(400);
       background-size: 128% auto;
-    }
-
-    &.commission {
-      .title {
-        font-size: em(30);
-        margin-top: 0;
-        top: 70%;
-      }
     }
 
     &.about {
       .title {
         margin-top: em(-20, 30px);
         font-size: em(30);
+      }
+    }
+
+    &.hero-classes {
+      .button {
+        left: auto;
+        top: 64%;
       }
     }
 
@@ -119,7 +117,7 @@
     }
   }
 
-  .more-wrap, .hero.classes .more-wrap {
+  .button {
     bottom: em(10);
     position: absolute;
     width: em(320);
