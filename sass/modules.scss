@@ -122,6 +122,8 @@ a.more {
   display: block;
   margin: 0 auto;
   width: em(500);
+  font-weight: bold;
+  font-family: "Univers LT W01 55 Roman";
   &:hover {
     background-color: $highlight;
     color: #fff;
@@ -172,19 +174,28 @@ a.more {
 }
 
 .calendar {
-  ul {
-    border-bottom: 1px solid $medium-2;
-    margin-left: 0;
-    margin-bottom: em(80);
-    li {
-      border-top: 1px solid $medium-2;
-      list-style: none;
-      padding: em(10) 0;
-      span + span {
-        min-width: 32%;
-      }
+  .entry {
+    border-top: 1px solid $medium-2;
+    list-style: none;
+    padding: em(10) 0;
+    span + span {
+      min-width: 32%;
     }
   }
+  
+  // ul {
+  //   border-bottom: 1px solid $medium-2;
+  //   margin-left: 0;
+  //   margin-bottom: em(80);
+  //   li {
+  //     border-top: 1px solid $medium-2;
+  //     list-style: none;
+  //     padding: em(10) 0;
+  //     span + span {
+  //       min-width: 32%;
+  //     }
+  //   }
+  // }
   span {
     display: inline-block;
     min-width: 10%;
