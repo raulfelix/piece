@@ -9,7 +9,7 @@ Template Name: classes
 <div class="hero hero-classes">
   <div class="p-grid p-grid-row">
     <div class="p-1 indented">
-      <h1 class="title">classes</h1>
+      <h1 class="title">Classes</h1>
       <div class="button">
         <a href="<?php echo get_page_link(136); ?>" class="jos">View term calendar</a>
       </div>

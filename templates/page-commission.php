@@ -9,7 +9,7 @@ Template Name: commission
 <div class="hero commission">
   <div class="p-grid p-grid-row">
     <div class="p-1 indented">
-      <h1 class="title">commission a piece</h1>
+      <h1 class="title">Commission a Piece</h1>
     </div>
   </div>
 </div>
