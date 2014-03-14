@@ -6,34 +6,34 @@ Template Name: contact
 
 <?php get_header(); ?>
 
-<div class="content has-secondary-title contact">
-  <div class="extra-header">
-    <div class="p-grid p-grid-row">
-      <div class="p-1 indented">
-        <h1 class="title">Contact</h1>
+<div class="header-secondary">
+  <div class="p-grid p-grid-row">
+    <div class="p-1 p-indent">
+      <h1 class="title">Contact</h1>
+    </div>
+  </div>
+</div>
+
+<div class="content content-heroless contact">
+  <div class="p-grid p-grid-row">
+    <div class="p-1 p-indent address">
+      <p class="intro">John Gallagher is available 7 days by appointment only</p>
+
+      <div class="p-1-2 bp3-p-1">
+        <p>Phone 02 8068 8482</br/>
+        Mobile 0213 324 123<br/>
+        Email <a mailto="johng@piecefurniture.com.au">johng@piecefurniture.com.au</a></p>
+      </div>
+      <div class="p-1-2 bp3-p-1">
+        <p>81 Sydenham Road, Marrickville,<br/>
+        NSW 2204, <br/>
+        Australia</p>
       </div>
     </div>
   </div>
-  <div class="content">
-    <div class="p-grid p-grid-row">
-      <div class="p-1 indented address">
-        <p class="intro">John Gallagher is available 7 days by appointment only</p>
-
-        <div class="p-1-2 bp3-p-1">
-          <p>Phone 02 8068 8482</br/>
-          Mobile 0213 324 123<br/>
-          Email <a mailto="johng@piecefurniture.com.au">johng@piecefurniture.com.au</a></p>
-        </div>
-        <div class="p-1-2 bp3-p-1">
-          <p>81 Sydenham Road, Marrickville,<br/>
-          NSW 2204, <br/>
-          Australia</p>
-        </div>
-      </div>
-    </div>
-    <div class="p-grid p-grid-row">
-      <div class="p-1 indented">
-        <div id="map-canvas"></div>
+  <div class="p-grid p-grid-row">
+    <div class="p-1 p-indent">
+      <div id="map-canvas"></div>
         <a class="map-link" href="javascript:void(0)">View on a map</a>
       </div>
     </div>

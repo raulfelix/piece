@@ -20,7 +20,7 @@
   padding: 0 em(10);
 
   & > div {
-    float: left;
+    @extend %pull-left;
     padding: 0 em(10);
   }
 
@@ -31,10 +31,10 @@
     display: block;
     visibility: hidden;
   }
-}
 
-.p-indent {
-  padding: em(16);  
+  .p-indent {
+    padding: 0 9%;
+  }
 }
 
 .p-1-12 {

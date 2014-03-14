@@ -2,10 +2,25 @@
   position: relative;
 }
 
+%absolute {
+  position: absolute;
+}
+%block {
+  display: block;
+}
+
 %clearfix:after {
   content: '';
   height: 0;
   clear: both;
   display: block;
   visibility: hidden;
+}
+
+%pull-left {
+  float: left;
+}
+
+%white {
+  color: #fff;
 }

@@ -5,40 +5,49 @@
   width: em(200);
   a { 
     font-family: "Univers LT W01 55 Roman";
+    background-color: #fff;
+    border-radius: 3px;
+    padding: em(20) 0;
+    text-align: center;
+    font-weight: bold;
+    @extend %block;
   }
   a:hover {
     background-color: $highlight;
-    color: #fff;
+    border: none;
+    @extend %white;
   }
 }
 
-.about {
-  ul {
-    border-top: 1px solid $medium-1;
-    padding: em(20) 0 em(40) 0;
-    margin: 0;
-    li {
-      margin-bottom: em(16);
-      width: 100%;
-      list-style: none;
-      @extend %clearfix;
-    }
-    li div:first-child {
-      float: left;
-      width: 18%;
-    }
-    li div:last-child {
-      float: left;
-       width: 82%;
-    }
+// underlined heading for use with h1
+h1.underline {
+  border-bottom: 1px solid $medium-1;
+  margin: em(60, 32px) 0 em(25, 32px) 0;
+  padding-bottom: em(15, 32px);
+}
+
+.event {
+  font-size: 16px;
+  font-family: "Univers LT W01 45 Light";
+  line-height: 27px;
+  margin-bottom: em(16);
+  width: 100%;
+  @extend %clearfix;
+
+  div:first-child {
+    @extend %pull-left;
+    width: 18%;
+  }
+  div:last-child {
+    @extend %pull-left;
+    width: 82%;
   }
 }
 
 .hero {
   height: em(600);
   overflow: hidden;
-  padding: 0 em(10);
-  position: relative;
+  @extend %relative;
 
   .p-grid-row, .p-1 {
     height: 100%;
@@ -54,19 +63,19 @@
     background: url('./images/about_a.jpg') no-repeat center center;
     .title {
       color: #000;
-      width: 20%;
-      position: absolute;
+      width: 20%;      
       top: 65%;
       margin-top: -30px;
+      @extend %absolute;
     }
   }
 
   &.commission {
     background: url('./images/commission_a.jpg') no-repeat center center;
     .title {
-      position: absolute;
       top: 50%;
       margin-top: -30px;
+      @extend %absolute;
     }
   }
 
@@ -74,18 +83,17 @@
     background: url('./images/classes_a.jpg') no-repeat center center;
     
     .title {
-      color: #fff;
-      position: absolute;
       top: 70%;
       margin-top: -30px;
+      @extend %absolute;
     }
 
     .button {
-      position: absolute;
       width: em(260);
       right: 0;
       top: 67%;
       margin-right: 9%;
+      @extend %absolute;
     }
   }
 
@@ -95,56 +103,23 @@
     margin-bottom: em(100);
     margin-top: em(220);
     text-align: center;
-    .title {
-      color: #fff;
-      text-transform: none;
-      font-weight: normal;
-    }
-  }
-
-  .jos {
-    background-color: #fff;
-    border-radius: 3px;
-    display: block;
-    padding: em(20) 0;
-    text-align: center;
-    font-weight: bold;
-  }
-}
-
-
-a.more {
-  background-color: #fff;
-  padding: em(20) em(120);
-  color: #000;
-  border-radius: 3px;
-  border-bottom: none !important;
-  display: block;
-  margin: 0 auto;
-  width: em(500);
-  font-weight: bold;
-  font-family: "Univers LT W01 55 Roman";
-  &:hover {
-    background-color: $highlight;
-    color: #fff;
   }
 }
 
 .gallery {
-  img {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
   &.content {
     padding-top: 0;
   }
+
+  img {
+    margin: 0;
+    width: 100%;
+  }
+  
   h3 {
     margin-top: em(40);
   }
-  .p-grid-row {
-    margin-bottom: 0;
-  }
+ 
   .caption {
     margin-top: em(5);
     margin-bottom: em(20);
@@ -152,11 +127,12 @@ a.more {
 }
 
 .gallery-detail {
-  padding-top: em(20);
-  p, a {
+  p {
     text-align: center;
-    display: block;
-    border-bottom: none;
+  }
+
+  .details {
+    margin-top: em(120);
   }
 
   img {
@@ -164,12 +140,9 @@ a.more {
     margin: em(20) auto;
   }
 
-  .more {
+  .button {
     margin: em(120) auto;
-  }
-
-  img:last-child {
-    margin-bottom: em(80);
+    width: em(480);
   }
 }
 
@@ -182,20 +155,7 @@ a.more {
       min-width: 32%;
     }
   }
-  
-  // ul {
-  //   border-bottom: 1px solid $medium-2;
-  //   margin-left: 0;
-  //   margin-bottom: em(80);
-  //   li {
-  //     border-top: 1px solid $medium-2;
-  //     list-style: none;
-  //     padding: em(10) 0;
-  //     span + span {
-  //       min-width: 32%;
-  //     }
-  //   }
-  // }
+ 
   span {
     display: inline-block;
     min-width: 10%;
@@ -203,23 +163,8 @@ a.more {
 }
 
 .contact {
-  h1 {
-    color: #000;
-    margin-bottom: em(20);
-    margin-top: 0;
-  } 
   .p-1-2 {
-    float: left;
-  }
-
-  a {
-    color: $highlight;
-    border-bottom: none;
-  }
-  img {
-    display: block;
-    margin: em(60) 0 0 0;
-    width: 100%;
+    @extend %pull-left;
   }
 }
 

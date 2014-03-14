@@ -6,15 +6,13 @@ Template Name: gallery
 
 <?php get_header(); ?>
 
-<div class="content has-secondary-title">
-  <div class="extra-header">
-    <div class="p-grid p-grid-row">
-      <div class="p-1">
-        <h1 class="title">Gallery</h1>
-      </div>
+<div class="header-secondary">
+  <div class="p-grid p-grid-row">
+    <div class="p-1">
+      <h1 class="title">Gallery</h1>
     </div>
   </div>
-</div>  
+</div>
 
 <div class="content gallery p-grid">
     <?php

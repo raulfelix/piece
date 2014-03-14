@@ -2,10 +2,13 @@
 
 @media all and (max-width: em(850)) {
   
+  .p-grid-row .p-indent { 
+    padding: 0 6%;
+  }
+
   .hero { 
     height: em(550);
     
-
     &.home {
       height: em(550);
       background-size: 136% auto;
@@ -29,10 +32,7 @@
     }
   }
 
-  .content .indented, 
-  .hero .indented {
-    padding: 0 6%;
-  }
+  
 
   .hero.commission {
     .title {

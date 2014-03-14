@@ -12,16 +12,7 @@
     margin-top: em(21);
   }
 
-  .active {
-    header nav {
-      display: block;
-    }
-    .hamburger {
-      background-image: url('./images/hamburger_red@2x.png');
-      background-color: #fff;
-    }
-  }
-
+  
   header {
     height: em(80);
 
@@ -31,12 +22,12 @@
 
     .logo {
       height: em(80);
-      width: em(140);
+      width: em(90);
     }
     nav {
+      position: absolute;
       display: none;
       background-color: #fff;
-      position: absolute;
       top: em(80);
       left: 0;
       margin-top: 0;
@@ -62,6 +53,10 @@
     }
   }
   
+  .active header nav {
+    display: block;
+  }
+
   nav {
     float: none;
     text-align: center;
@@ -78,9 +73,7 @@
       padding-top: em(40);
       text-align: center;
     }
-    .up {
-      top: em(-58, 10px);
-    } 
+     
     nav { 
       float: none;
       text-align: center;
@@ -103,9 +96,6 @@
     .hero-text {
       width: 65%;
     }
-    // &.about, &.classes {
-    //   background-size: 170% auto;
-    // }
   }
 }
 

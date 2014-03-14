@@ -1,14 +1,18 @@
+
 @import "util";
 
 @media all and (max-width: em(569)) {
-  
-  .hero {
 
-    height: em(300);
-    
-    .indented {
-      padding: 0;
+  .p-grid-row {
+    padding: 0;
+
+    .p-indent {
+      padding: 0 em(10);
     }
+  }
+
+  .hero {
+    height: em(300);
     
     &.home {
       background-size: 140% auto;
@@ -43,22 +47,6 @@
         font-size: em(34);
       }
     }
-  }
-
-  .content {
-    padding-top: em(40);
-    padding-bottom: em(40);
-    &.has-secondary-title {
-      padding-top: 0;
-    }
-  }
-
-  .content .indented {
-    padding: 0 em(10);
-  }
-
-  .p-grid-row {
-    padding: 0;
   }
 
   .calendar {

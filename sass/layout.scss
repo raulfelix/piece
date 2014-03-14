@@ -12,22 +12,23 @@ body {
 header {
   height: em(150);
   background-color: #fff;
+  font-family: "Univers LT W01 45 Light";
 
   .logo {
     height: em(150);
     width: em(136);
-    float: left;
     background: url('./images/logo-desktop.png') no-repeat left center transparent;
     background-size: 100% auto;
+    @extend %pull-left;
     @extend %relative;
   }
   span {
     color: #aaaaaa;
-    display: block;
     font-size: em(11);
-    position: absolute;
     top: em(100, 11px);
     left: em(3, 11px);
+    @extend %block;
+    @extend %absolute;
   }
 }
 
@@ -35,32 +36,35 @@ footer {
   background-color: #f4f4f4;
   border-top: 1px solid #d6d6d6;
   padding: em(135) 0;
-  position: relative;
+  @extend %relative;
+  
   .legal {
     color: #aaaaaa;
     font-size: em(12);
-    float: left;
+    font-family: "Univers LT W01 45 Light";
+    @extend %pull-left;
   } 
+  
   nav {
     margin-top: 0;
   }
 
   .up {
     font-size: em(10);
+    font-family: "Univers LT W01 45 Light";
     text-transform: uppercase;
     letter-spacing: 5px;
     background-color: #d6d6d6;
-    color: #fff;
     border-radius: 3px;
     margin-left: em(-80, 10px);
     padding: em(10, 10px) em(20, 10px);
     position: absolute;
-    top: em(-154, 10px);
+    top: em(-18, 10px);
     left: 50%;
-  }
-
-  .p-1 {
-    position: relative;
+    @extend %white;
+    &:hover {
+      @extend %white;
+    }
   }
 }
 
@@ -70,7 +74,7 @@ footer {
     display: block;
   }
   .title {
-    color: #fff;
+    @extend %white;
   }
 }
 
@@ -79,7 +83,7 @@ nav {
   margin-top: em(65);
   
   li {
-    float: left;
+    @extend %pull-left;
     padding: 0 em(16);
   }
   li:last-child {
@@ -90,7 +94,7 @@ nav {
     display: block;
     font-size: em(12);
     letter-spacing: 1px;
-    text-transform: capitalize;
+    font-family: "Univers LT W01 45 Light";
     &:hover {
       border-bottom: 1px solid $highlight;
     }
@@ -106,7 +110,6 @@ nav {
 
   img {
     width: 80%;
-    display: block;
     margin: em(50) auto em(40);
   }
 
@@ -122,29 +125,33 @@ nav {
   }
   li {
     list-style: disc;
+    text-indent: 0px;
+    font-size: 16px;
+    font-family: "Univers LT W01 45 Light";
+    color: rgba(0, 0, 0, 1);
+    line-height: 27px;
   }
 }
 
-.has-secondary-title {
-  padding-top: 0; 
-
-  .extra-header {
-    background-color: #fff;
-    padding-top: em(40);
-  }
-
+.content-heroless {
+  padding-top: em(60);
 }
 
-.content .indented, 
-.hero .indented {
-  padding: 0 9%;
+.header-secondary {
+  background-color: #fff;
+  padding: em(40) 0;
+
+  .title {
+    line-height: normal;
+    margin-bottom: 0;
+  }
 }
 
 #map-canvas {
   min-height: em(400);
-  display: block;
   margin: 3.75em 0 0 0;
   width: 100%;
+  @extend %block;
 }
 
 .entry {
@@ -163,4 +170,18 @@ nav {
 
 .mceIcon .mce_calendar_entry:before {
   content: '\f145';
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 1.5),
+(min--moz-device-pixel-ratio: 1.5),
+(min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) { 
+  header {
+    .logo {
+      background: url('./images/logo-retina.png') no-repeat left center transparent;
+      background-size: 100% auto;
+    }
+  }
 }

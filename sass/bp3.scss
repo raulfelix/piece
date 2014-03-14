@@ -19,13 +19,13 @@
     }
   }
 
+  .title {
+    font-size: em(40);
+  }
+
   h1 {
     font-size: em(32);
     margin-top: em(50, 32px);
-  }
-  
-  .title {
-    font-size: em(40);
   }
 
   h3 { 
@@ -34,9 +34,6 @@
 
   .content {
     padding: em(40) 0;
-     &.has-secondary-title {
-      padding-top: 0;
-    }
   }
 
 
@@ -86,10 +83,6 @@
     h1 {
       font-size: em(36);
     }
-
-    .jos {
-      padding: em(12) 0;
-    }
   }
 
   .feature {
@@ -112,8 +105,11 @@
   }
 
   .gallery-detail {
-    .more {
+    .button {
       width: 100%;
+      position: relative;
+      left: auto;
+      top: auto;
     }
   }
 

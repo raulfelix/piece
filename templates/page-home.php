@@ -11,12 +11,12 @@ Template Name: home
     <h1 class="title">Hand-crafted, modern, thoughtfully designed furniture</h1>
   </div>
   <div class="button">
-    <a href="<?php echo get_page_link(10); ?>" class="jos">View the gallery</a>
+    <a href="<?php echo get_page_link(10); ?>">View the gallery</a>
   </div>
 </div>
 <div class="content">
   <div class="p-grid p-grid-row">
-    <div class="p-1 indented">
+    <div class="p-1 p-indent">
       <?php if (have_posts()) : while (have_posts()) : the_post();?>
       <?php the_content(); ?>
       <?php endwhile; endif; ?>
