@@ -49,17 +49,11 @@
     }
   }
 
-  .calendar {
-    ul {
-      li {
-        span:last-child {
-          display: block;
-          margin-left: 18%;
-        }
-      }
-    }
-    span {
-      min-width: 18%;
-    }
+  .entry span:last-child {
+    display: block;
+    margin-left: 18%;
+  }
+  .entry span {
+    min-width: 18%;
   }
 }

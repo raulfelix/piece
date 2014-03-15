@@ -40,16 +40,10 @@
     }
   }
 
-  .calendar {
-    ul {
-      li {
-        span + span {
-          min-width: 34%;
-        }
-      }
-    }
-    span {
-      min-width: 12%;
-    }
+  .entry span + span {
+     min-width: 34%;
+  }
+  .entry span {
+    min-width: 12%;
   }
 }

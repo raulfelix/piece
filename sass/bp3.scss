@@ -91,17 +91,11 @@
     }
   }
 
-  .calendar {
-    ul {
-      li {
-        span + span {
-          min-width: 40%;
-        }
-      }
-    }
-    span {
-      min-width: 14%;
-    }
+  .entry span + span {
+     min-width: 40%;
+  }
+  .entry span {
+    min-width: 14%;
   }
 
   .gallery-detail {

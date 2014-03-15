@@ -98,7 +98,7 @@ h1.underline {
   }
 
   .hero-text {
-    width: 55%;
+    width: 54%;
     margin: 0 auto;
     margin-bottom: em(100);
     margin-top: em(220);
@@ -143,22 +143,6 @@ h1.underline {
   .button {
     margin: em(120) auto;
     width: em(480);
-  }
-}
-
-.calendar {
-  .entry {
-    border-top: 1px solid $medium-2;
-    list-style: none;
-    padding: em(10) 0;
-    span + span {
-      min-width: 32%;
-    }
-  }
- 
-  span {
-    display: inline-block;
-    min-width: 10%;
   }
 }
 
