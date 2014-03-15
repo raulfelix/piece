@@ -1,7 +1,6 @@
 %relative {
   position: relative;
 }
-
 %absolute {
   position: absolute;
 }
@@ -23,4 +22,11 @@
 
 %white {
   color: #fff;
+}
+%bg-white {
+  background-color: #fff;
+}
+
+%center {
+  text-align: center;
 }

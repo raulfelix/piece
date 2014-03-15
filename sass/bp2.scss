@@ -11,6 +11,9 @@
     }
   }
 
+  .button a {
+    padding: em(16) 0;
+  }
   .hero {
     height: em(300);
     
@@ -25,7 +28,7 @@
     }
 
     &.commission, &.hero-classes, &.about {
-      background-size: 200% auto;
+      background-size: 190% auto;
     }
 
     &.hero-classes {

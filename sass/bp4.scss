@@ -18,7 +18,7 @@
       }
     }
 
-    &.about, &.classes {
+    &.about, &.hero-classes {
       background-size: 180% auto;
     }
 
@@ -31,8 +31,6 @@
       margin-top: em(160);
     }
   }
-
-  
 
   .hero.commission {
     .title {

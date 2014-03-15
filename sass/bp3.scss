@@ -7,6 +7,7 @@
   }
 
   .content {
+    padding: em(40) 0;
     img {
       width: 100%;
       margin: em(16) auto;
@@ -31,11 +32,6 @@
   h3 { 
     font-size: em(24);
   }
-
-  .content {
-    padding: em(40) 0;
-  }
-
 
   .address {
     div:first-child {
@@ -80,14 +76,12 @@
       }
     }
 
+    &.commission, &.hero-classes {
+      background-size: 180% auto;
+    }
+
     h1 {
       font-size: em(36);
-    }
-  }
-
-  .feature {
-    img {
-      margin: em(10) 0;
     }
   }
 

@@ -11,8 +11,8 @@ body {
 
 header {
   height: em(150);
-  background-color: #fff;
   font-family: "Univers LT W01 45 Light";
+  @extend %bg-white;
 
   .logo {
     height: em(150);
@@ -88,7 +88,7 @@ nav {
   }
 
   a {
-    display: block;
+    @extend %block;
     font-size: em(12);
     letter-spacing: 1px;
     font-family: "Univers LT W01 45 Light";
@@ -135,7 +135,7 @@ nav {
 }
 
 .header-secondary {
-  background-color: #fff;
+  @extend %bg-white;
   padding: em(40) 0;
 
   .title {
@@ -174,11 +174,6 @@ nav {
   h1 {
     margin-top: em(30);
   }
-}
-
-
-.mceIcon .mce_calendar_entry:before {
-  content: '\f145';
 }
 
 @media 

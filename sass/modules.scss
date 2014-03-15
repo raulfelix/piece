@@ -4,13 +4,13 @@
   margin: 0 auto;
   width: em(200);
   a { 
+    @extend %bg-white;
+    @extend %block;
+    @extend %center;
     font-family: "Univers LT W01 55 Roman";
-    background-color: #fff;
     border-radius: 3px;
     padding: em(20) 0;
-    text-align: center;
     font-weight: bold;
-    @extend %block;
   }
   a:hover {
     background-color: $highlight;
@@ -98,11 +98,11 @@ h1.underline {
   }
 
   .hero-text {
+    @extend %center;
     width: 54%;
     margin: 0 auto;
     margin-bottom: em(100);
     margin-top: em(220);
-    text-align: center;
   }
 }
 
@@ -128,7 +128,7 @@ h1.underline {
 
 .gallery-detail {
   p {
-    text-align: center;
+    @extend %center;
   }
 
   .details {
